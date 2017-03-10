@@ -1,0 +1,17 @@
+name: bigdata-kpi-scripts
+summary: Scripts to gather Big Data KPIs from external sources
+maintainers:
+  - Canonical IS <root@admin.canonical.com>
+  - Konstantinos Tsakalozos <kos.tsakalozos@canonical.com>
+description: |
+  Scripts to gather Big Data KPIs from external sources.
+tags:
+  - kpi
+subordinate: true
+series:
+  - xenial
+  - trusty
+requires:
+  juju-info:
+    scope: container
+    interface: juju-info
