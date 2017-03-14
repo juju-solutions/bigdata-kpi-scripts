@@ -6,7 +6,7 @@
   "gnetId": null,
   "graphTooltip": 0,
   "hideControls": false,
-  "id": 3,
+  "id": 2,
   "links": [
     {
       "icon": "external link",
@@ -836,6 +836,3328 @@
       "showTitle": false,
       "title": "Dashboard Row",
       "titleSize": "h6"
+    },
+    {
+      "collapse": false,
+      "height": 62,
+      "panels": [
+        {
+          "content": "# Active Deployments",
+          "id": 13,
+          "links": [],
+          "mode": "markdown",
+          "span": 12,
+          "title": "",
+          "type": "text"
+        }
+      ],
+      "repeat": null,
+      "repeatIteration": null,
+      "repeatRowId": null,
+      "showTitle": false,
+      "title": "Title Active Deps",
+      "titleSize": "h6"
+    },
+    {
+      "collapse": false,
+      "height": 289,
+      "panels": [
+        {
+          "aliasColors": {},
+          "bars": true,
+          "datasource": "prometheus - Juju generated source",
+          "fill": 1,
+          "id": 11,
+          "legend": {
+            "avg": false,
+            "current": false,
+            "max": false,
+            "min": false,
+            "show": false,
+            "total": false,
+            "values": false
+          },
+          "lines": false,
+          "linewidth": 1,
+          "links": [],
+          "nullPointMode": "null",
+          "percentage": false,
+          "pointradius": 5,
+          "points": false,
+          "renderer": "flot",
+          "seriesOverrides": [],
+          "span": 6,
+          "stack": false,
+          "steppedLine": false,
+          "targets": [
+            {
+              "expr": "live_big_deployments_hadoop_active",
+              "intervalFactor": 2,
+              "legendFormat": "Hadoop",
+              "metric": "live_bd_deployments_apache_hadoop_active",
+              "refId": "A",
+              "step": 60
+            },
+            {
+              "expr": "live_big_deployments_spark_active",
+              "intervalFactor": 2,
+              "legendFormat": "Spark",
+              "metric": "live_bd_deployments_apache_hadoop_active",
+              "refId": "B",
+              "step": 60
+            },
+            {
+              "expr": "live_big_deployments_kafka_active",
+              "intervalFactor": 2,
+              "legendFormat": "Kafka",
+              "metric": "live_bd_deployments_apache_hadoop_active",
+              "refId": "C",
+              "step": 60
+            },
+            {
+              "expr": "live_big_deployments_apache_hadoop_active",
+              "intervalFactor": 2,
+              "legendFormat": "Apache Hadoop",
+              "metric": "live_bd_deployments_apache_hadoop_active",
+              "refId": "D",
+              "step": 60
+            },
+            {
+              "expr": "live_big_deployments_apache_spark_active",
+              "intervalFactor": 2,
+              "legendFormat": "Apache Spark",
+              "metric": "live_bd_deployments_apache_hadoop_active",
+              "refId": "E",
+              "step": 60
+            },
+            {
+              "expr": "live_big_deployments_apache_kafka_active",
+              "intervalFactor": 2,
+              "legendFormat": "Apache Kafka",
+              "metric": "live_bd_deployments_apache_hadoop_active",
+              "refId": "F",
+              "step": 60
+            }
+          ],
+          "thresholds": [],
+          "timeFrom": null,
+          "timeShift": null,
+          "title": "Active deployemnts",
+          "tooltip": {
+            "shared": false,
+            "sort": 0,
+            "value_type": "individual"
+          },
+          "type": "graph",
+          "xaxis": {
+            "mode": "series",
+            "name": null,
+            "show": true,
+            "values": [
+              "current"
+            ]
+          },
+          "yaxes": [
+            {
+              "format": "short",
+              "label": null,
+              "logBase": 1,
+              "max": null,
+              "min": null,
+              "show": true
+            },
+            {
+              "format": "short",
+              "label": null,
+              "logBase": 1,
+              "max": null,
+              "min": null,
+              "show": true
+            }
+          ]
+        },
+        {
+          "aliasColors": {},
+          "bars": false,
+          "datasource": "prometheus - Juju generated source",
+          "fill": 1,
+          "id": 12,
+          "legend": {
+            "alignAsTable": false,
+            "avg": false,
+            "current": true,
+            "max": false,
+            "min": false,
+            "show": true,
+            "total": false,
+            "values": true
+          },
+          "lines": true,
+          "linewidth": 1,
+          "links": [],
+          "nullPointMode": "null",
+          "percentage": false,
+          "pointradius": 5,
+          "points": false,
+          "renderer": "flot",
+          "seriesOverrides": [],
+          "span": 6,
+          "stack": false,
+          "steppedLine": false,
+          "targets": [
+            {
+              "expr": "live_big_deployments_hadoop_active",
+              "intervalFactor": 2,
+              "legendFormat": "Hadoop",
+              "metric": "live_bd_deployments_apache_hadoop_active",
+              "refId": "A",
+              "step": 60
+            },
+            {
+              "expr": "live_big_deployments_spark_active",
+              "intervalFactor": 2,
+              "legendFormat": "Spark",
+              "metric": "live_bd_deployments_apache_hadoop_active",
+              "refId": "B",
+              "step": 60
+            },
+            {
+              "expr": "live_big_deployments_kafka_active",
+              "intervalFactor": 2,
+              "legendFormat": "Kafka",
+              "metric": "live_bd_deployments_apache_hadoop_active",
+              "refId": "C",
+              "step": 60
+            },
+            {
+              "expr": "live_big_deployments_apache_hadoop_active",
+              "intervalFactor": 2,
+              "legendFormat": "Apache Hadoop",
+              "metric": "live_bd_deployments_apache_hadoop_active",
+              "refId": "D",
+              "step": 60
+            },
+            {
+              "expr": "live_big_deployments_apache_spark_active",
+              "intervalFactor": 2,
+              "legendFormat": "Apache Spark",
+              "metric": "live_bd_deployments_apache_hadoop_active",
+              "refId": "E",
+              "step": 60
+            },
+            {
+              "expr": "live_big_deployments_apache_kafka_active",
+              "intervalFactor": 2,
+              "legendFormat": "Apache Kafka",
+              "metric": "live_bd_deployments_apache_hadoop_active",
+              "refId": "F",
+              "step": 60
+            }
+          ],
+          "thresholds": [],
+          "timeFrom": null,
+          "timeShift": null,
+          "title": "Active deployments over time",
+          "tooltip": {
+            "shared": false,
+            "sort": 0,
+            "value_type": "individual"
+          },
+          "type": "graph",
+          "xaxis": {
+            "mode": "time",
+            "name": null,
+            "show": true,
+            "values": [
+              "current"
+            ]
+          },
+          "yaxes": [
+            {
+              "format": "short",
+              "label": null,
+              "logBase": 1,
+              "max": null,
+              "min": null,
+              "show": true
+            },
+            {
+              "format": "short",
+              "label": null,
+              "logBase": 1,
+              "max": null,
+              "min": null,
+              "show": true
+            }
+          ]
+        }
+      ],
+      "repeat": null,
+      "repeatIteration": null,
+      "repeatRowId": null,
+      "showTitle": false,
+      "title": "Active Deps",
+      "titleSize": "h6"
+    },
+    {
+      "collapse": false,
+      "height": 12,
+      "panels": [
+        {
+          "content": "# Bigtop Hadoop",
+          "id": 14,
+          "links": [],
+          "mode": "markdown",
+          "span": 12,
+          "title": "",
+          "type": "text"
+        }
+      ],
+      "repeat": null,
+      "repeatIteration": null,
+      "repeatRowId": null,
+      "showTitle": false,
+      "title": "Title Bigtop Hadoop",
+      "titleSize": "h6"
+    },
+    {
+      "collapse": false,
+      "height": 251,
+      "panels": [
+        {
+          "aliasColors": {},
+          "bars": false,
+          "datasource": "prometheus - Juju generated source",
+          "fill": 1,
+          "id": 16,
+          "legend": {
+            "avg": false,
+            "current": false,
+            "max": false,
+            "min": false,
+            "show": true,
+            "total": false,
+            "values": false
+          },
+          "lines": true,
+          "linewidth": 1,
+          "links": [],
+          "nullPointMode": "null",
+          "percentage": false,
+          "pointradius": 5,
+          "points": false,
+          "renderer": "flot",
+          "seriesOverrides": [],
+          "span": 4,
+          "stack": true,
+          "steppedLine": false,
+          "targets": [
+            {
+              "expr": "live_big_deployments_hadoop_ec2_three_months",
+              "intervalFactor": 2,
+              "legendFormat": "AWS",
+              "metric": "live_big_deployments_hadoop_ec2_one_month",
+              "refId": "A",
+              "step": 60
+            },
+            {
+              "expr": "live_big_deployments_hadoop_azure_three_months",
+              "intervalFactor": 2,
+              "legendFormat": "Azure",
+              "metric": "live_big_deployments_hadoop_ec2_one_month",
+              "refId": "B",
+              "step": 60
+            },
+            {
+              "expr": "live_big_deployments_hadoop_gce_three_months",
+              "intervalFactor": 2,
+              "legendFormat": "GCE",
+              "metric": "live_big_deployments_hadoop_ec2_one_month",
+              "refId": "C",
+              "step": 60
+            },
+            {
+              "expr": "live_big_deployments_hadoop_openstack_three_months",
+              "intervalFactor": 2,
+              "legendFormat": "Openstack",
+              "metric": "live_big_deployments_hadoop_ec2_one_month",
+              "refId": "D",
+              "step": 60
+            },
+            {
+              "expr": "live_big_deployments_hadoop_lxd_three_months",
+              "intervalFactor": 2,
+              "legendFormat": "LXD",
+              "metric": "live_big_deployments_hadoop_ec2_one_month",
+              "refId": "E",
+              "step": 60
+            },
+            {
+              "expr": "live_big_deployments_hadoop_maas_three_months",
+              "intervalFactor": 2,
+              "legendFormat": "MaaS",
+              "metric": "live_big_deployments_hadoop_ec2_one_month",
+              "refId": "F",
+              "step": 60
+            },
+            {
+              "expr": "live_big_deployments_hadoop_manual_three_months",
+              "intervalFactor": 2,
+              "legendFormat": "Manual",
+              "metric": "live_big_deployments_hadoop_ec2_one_month",
+              "refId": "G",
+              "step": 60
+            }
+          ],
+          "thresholds": [],
+          "timeFrom": null,
+          "timeShift": null,
+          "title": "Hadoop last 3 months deployments (stacked)",
+          "tooltip": {
+            "shared": true,
+            "sort": 0,
+            "value_type": "individual"
+          },
+          "type": "graph",
+          "xaxis": {
+            "mode": "time",
+            "name": null,
+            "show": true,
+            "values": []
+          },
+          "yaxes": [
+            {
+              "format": "short",
+              "label": null,
+              "logBase": 1,
+              "max": null,
+              "min": null,
+              "show": true
+            },
+            {
+              "format": "short",
+              "label": null,
+              "logBase": 1,
+              "max": null,
+              "min": null,
+              "show": true
+            }
+          ]
+        },
+        {
+          "aliasColors": {},
+          "bars": false,
+          "datasource": "prometheus - Juju generated source",
+          "fill": 1,
+          "id": 15,
+          "legend": {
+            "avg": false,
+            "current": false,
+            "max": false,
+            "min": false,
+            "show": true,
+            "total": false,
+            "values": false
+          },
+          "lines": true,
+          "linewidth": 1,
+          "links": [],
+          "nullPointMode": "null",
+          "percentage": false,
+          "pointradius": 5,
+          "points": false,
+          "renderer": "flot",
+          "seriesOverrides": [],
+          "span": 4,
+          "stack": true,
+          "steppedLine": false,
+          "targets": [
+            {
+              "expr": "live_big_deployments_hadoop_ec2_one_month",
+              "intervalFactor": 2,
+              "legendFormat": "AWS",
+              "metric": "live_big_deployments_hadoop_ec2_one_month",
+              "refId": "A",
+              "step": 60
+            },
+            {
+              "expr": "live_big_deployments_hadoop_azure_one_month",
+              "intervalFactor": 2,
+              "legendFormat": "Azure",
+              "metric": "live_big_deployments_hadoop_ec2_one_month",
+              "refId": "B",
+              "step": 60
+            },
+            {
+              "expr": "live_big_deployments_hadoop_gce_one_month",
+              "intervalFactor": 2,
+              "legendFormat": "GCE",
+              "metric": "live_big_deployments_hadoop_ec2_one_month",
+              "refId": "C",
+              "step": 60
+            },
+            {
+              "expr": "live_big_deployments_hadoop_openstack_one_month",
+              "intervalFactor": 2,
+              "legendFormat": "Openstack",
+              "metric": "live_big_deployments_hadoop_ec2_one_month",
+              "refId": "D",
+              "step": 60
+            },
+            {
+              "expr": "live_big_deployments_hadoop_lxd_one_month",
+              "intervalFactor": 2,
+              "legendFormat": "LXD",
+              "metric": "live_big_deployments_hadoop_ec2_one_month",
+              "refId": "E",
+              "step": 60
+            },
+            {
+              "expr": "live_big_deployments_hadoop_maas_one_month",
+              "intervalFactor": 2,
+              "legendFormat": "MaaS",
+              "metric": "live_big_deployments_hadoop_ec2_one_month",
+              "refId": "F",
+              "step": 60
+            },
+            {
+              "expr": "live_big_deployments_hadoop_manual_one_month",
+              "intervalFactor": 2,
+              "legendFormat": "Manual",
+              "metric": "live_big_deployments_hadoop_ec2_one_month",
+              "refId": "G",
+              "step": 60
+            }
+          ],
+          "thresholds": [],
+          "timeFrom": null,
+          "timeShift": null,
+          "title": "Hadoop last months deployments (stacked)",
+          "tooltip": {
+            "shared": true,
+            "sort": 0,
+            "value_type": "individual"
+          },
+          "type": "graph",
+          "xaxis": {
+            "mode": "time",
+            "name": null,
+            "show": true,
+            "values": []
+          },
+          "yaxes": [
+            {
+              "format": "short",
+              "label": null,
+              "logBase": 1,
+              "max": null,
+              "min": null,
+              "show": true
+            },
+            {
+              "format": "short",
+              "label": null,
+              "logBase": 1,
+              "max": null,
+              "min": null,
+              "show": true
+            }
+          ]
+        },
+        {
+          "aliasColors": {},
+          "bars": false,
+          "datasource": "prometheus - Juju generated source",
+          "fill": 1,
+          "id": 17,
+          "legend": {
+            "avg": false,
+            "current": false,
+            "max": false,
+            "min": false,
+            "show": true,
+            "total": false,
+            "values": false
+          },
+          "lines": true,
+          "linewidth": 1,
+          "links": [],
+          "nullPointMode": "null",
+          "percentage": false,
+          "pointradius": 5,
+          "points": false,
+          "renderer": "flot",
+          "seriesOverrides": [],
+          "span": 4,
+          "stack": true,
+          "steppedLine": false,
+          "targets": [
+            {
+              "expr": "live_big_deployments_hadoop_ec2_six_months",
+              "intervalFactor": 2,
+              "legendFormat": "AWS",
+              "metric": "live_big_deployments_hadoop_ec2_one_month",
+              "refId": "A",
+              "step": 60
+            },
+            {
+              "expr": "live_big_deployments_hadoop_azure_six_months",
+              "intervalFactor": 2,
+              "legendFormat": "Azure",
+              "metric": "live_big_deployments_hadoop_ec2_one_month",
+              "refId": "B",
+              "step": 60
+            },
+            {
+              "expr": "live_big_deployments_hadoop_gce_six_months",
+              "intervalFactor": 2,
+              "legendFormat": "GCE",
+              "metric": "live_big_deployments_hadoop_ec2_one_month",
+              "refId": "C",
+              "step": 60
+            },
+            {
+              "expr": "live_big_deployments_hadoop_openstack_six_months",
+              "intervalFactor": 2,
+              "legendFormat": "Openstack",
+              "metric": "live_big_deployments_hadoop_ec2_one_month",
+              "refId": "D",
+              "step": 60
+            },
+            {
+              "expr": "live_big_deployments_hadoop_lxd_six_months",
+              "intervalFactor": 2,
+              "legendFormat": "LXD",
+              "metric": "live_big_deployments_hadoop_ec2_one_month",
+              "refId": "E",
+              "step": 60
+            },
+            {
+              "expr": "live_big_deployments_hadoop_maas_six_months",
+              "intervalFactor": 2,
+              "legendFormat": "MaaS",
+              "metric": "live_big_deployments_hadoop_ec2_one_month",
+              "refId": "F",
+              "step": 60
+            },
+            {
+              "expr": "live_big_deployments_hadoop_manual_six_months",
+              "intervalFactor": 2,
+              "legendFormat": "Manual",
+              "metric": "live_big_deployments_hadoop_ec2_one_month",
+              "refId": "G",
+              "step": 60
+            }
+          ],
+          "thresholds": [],
+          "timeFrom": null,
+          "timeShift": null,
+          "title": "Hadoop last 6 months deployments (stacked)",
+          "tooltip": {
+            "shared": true,
+            "sort": 0,
+            "value_type": "individual"
+          },
+          "type": "graph",
+          "xaxis": {
+            "mode": "time",
+            "name": null,
+            "show": true,
+            "values": []
+          },
+          "yaxes": [
+            {
+              "format": "short",
+              "label": null,
+              "logBase": 1,
+              "max": null,
+              "min": null,
+              "show": true
+            },
+            {
+              "format": "short",
+              "label": null,
+              "logBase": 1,
+              "max": null,
+              "min": null,
+              "show": true
+            }
+          ]
+        }
+      ],
+      "repeat": null,
+      "repeatIteration": null,
+      "repeatRowId": null,
+      "showTitle": false,
+      "title": "BT Hadoop 1",
+      "titleSize": "h6"
+    },
+    {
+      "collapse": false,
+      "height": 250,
+      "panels": [
+        {
+          "aliasColors": {},
+          "bars": false,
+          "datasource": "prometheus - Juju generated source",
+          "fill": 1,
+          "id": 18,
+          "legend": {
+            "avg": false,
+            "current": false,
+            "max": false,
+            "min": false,
+            "show": true,
+            "total": false,
+            "values": false
+          },
+          "lines": true,
+          "linewidth": 1,
+          "links": [],
+          "nullPointMode": "null",
+          "percentage": false,
+          "pointradius": 5,
+          "points": false,
+          "renderer": "flot",
+          "seriesOverrides": [],
+          "span": 4,
+          "stack": true,
+          "steppedLine": false,
+          "targets": [
+            {
+              "expr": "live_big_deployments_longlasting_hadoop_ec2_one_month",
+              "intervalFactor": 2,
+              "legendFormat": "AWS",
+              "metric": "live_big_deployments_hadoop_ec2_one_month",
+              "refId": "A",
+              "step": 60
+            },
+            {
+              "expr": "live_big_deployments_longlasting_hadoop_azure_one_month",
+              "intervalFactor": 2,
+              "legendFormat": "Azure",
+              "metric": "live_big_deployments_hadoop_ec2_one_month",
+              "refId": "B",
+              "step": 60
+            },
+            {
+              "expr": "live_big_deployments_longlasting_hadoop_gce_one_month",
+              "intervalFactor": 2,
+              "legendFormat": "GCE",
+              "metric": "live_big_deployments_hadoop_ec2_one_month",
+              "refId": "C",
+              "step": 60
+            },
+            {
+              "expr": "live_big_deployments_longlasting_hadoop_openstack_one_month",
+              "intervalFactor": 2,
+              "legendFormat": "Openstack",
+              "metric": "live_big_deployments_hadoop_ec2_one_month",
+              "refId": "D",
+              "step": 60
+            },
+            {
+              "expr": "live_big_deployments_longlasting_hadoop_lxd_one_month",
+              "intervalFactor": 2,
+              "legendFormat": "LXD",
+              "metric": "live_big_deployments_hadoop_ec2_one_month",
+              "refId": "E",
+              "step": 60
+            },
+            {
+              "expr": "live_big_deployments_longlasting_hadoop_maas_one_month",
+              "intervalFactor": 2,
+              "legendFormat": "MaaS",
+              "metric": "live_big_deployments_hadoop_ec2_one_month",
+              "refId": "F",
+              "step": 60
+            },
+            {
+              "expr": "live_big_deployments_longlasting_hadoop_manual_one_month",
+              "intervalFactor": 2,
+              "legendFormat": "Manual",
+              "metric": "live_big_deployments_hadoop_ec2_one_month",
+              "refId": "G",
+              "step": 60
+            }
+          ],
+          "thresholds": [],
+          "timeFrom": null,
+          "timeShift": null,
+          "title": "Last months deployments > 2 weeks (stacked)",
+          "tooltip": {
+            "shared": true,
+            "sort": 0,
+            "value_type": "individual"
+          },
+          "type": "graph",
+          "xaxis": {
+            "mode": "time",
+            "name": null,
+            "show": true,
+            "values": []
+          },
+          "yaxes": [
+            {
+              "format": "short",
+              "label": null,
+              "logBase": 1,
+              "max": null,
+              "min": null,
+              "show": true
+            },
+            {
+              "format": "short",
+              "label": null,
+              "logBase": 1,
+              "max": null,
+              "min": null,
+              "show": true
+            }
+          ]
+        },
+        {
+          "aliasColors": {},
+          "bars": false,
+          "datasource": "prometheus - Juju generated source",
+          "fill": 1,
+          "id": 19,
+          "legend": {
+            "avg": false,
+            "current": false,
+            "max": false,
+            "min": false,
+            "show": true,
+            "total": false,
+            "values": false
+          },
+          "lines": true,
+          "linewidth": 1,
+          "links": [],
+          "nullPointMode": "null",
+          "percentage": false,
+          "pointradius": 5,
+          "points": false,
+          "renderer": "flot",
+          "seriesOverrides": [],
+          "span": 4,
+          "stack": true,
+          "steppedLine": false,
+          "targets": [
+            {
+              "expr": "live_big_deployments_longlasting_hadoop_ec2_three_months",
+              "intervalFactor": 2,
+              "legendFormat": "AWS",
+              "metric": "live_big_deployments_hadoop_ec2_one_month",
+              "refId": "A",
+              "step": 60
+            },
+            {
+              "expr": "live_big_deployments_longlasting_hadoop_azure_three_months",
+              "intervalFactor": 2,
+              "legendFormat": "Azure",
+              "metric": "live_big_deployments_hadoop_ec2_one_month",
+              "refId": "B",
+              "step": 60
+            },
+            {
+              "expr": "live_big_deployments_longlasting_hadoop_gce_three_months",
+              "intervalFactor": 2,
+              "legendFormat": "GCE",
+              "metric": "live_big_deployments_hadoop_ec2_one_month",
+              "refId": "C",
+              "step": 60
+            },
+            {
+              "expr": "live_big_deployments_longlasting_hadoop_openstack_three_months",
+              "intervalFactor": 2,
+              "legendFormat": "Openstack",
+              "metric": "live_big_deployments_hadoop_ec2_one_month",
+              "refId": "D",
+              "step": 60
+            },
+            {
+              "expr": "live_big_deployments_longlasting_hadoop_lxd_three_months",
+              "intervalFactor": 2,
+              "legendFormat": "LXD",
+              "metric": "live_big_deployments_hadoop_ec2_one_month",
+              "refId": "E",
+              "step": 60
+            },
+            {
+              "expr": "live_big_deployments_longlasting_hadoop_maas_three_months",
+              "intervalFactor": 2,
+              "legendFormat": "MaaS",
+              "metric": "live_big_deployments_hadoop_ec2_one_month",
+              "refId": "F",
+              "step": 60
+            },
+            {
+              "expr": "live_big_deployments_longlasting_hadoop_manual_three_months",
+              "intervalFactor": 2,
+              "legendFormat": "Manual",
+              "metric": "live_big_deployments_hadoop_ec2_one_month",
+              "refId": "G",
+              "step": 60
+            }
+          ],
+          "thresholds": [],
+          "timeFrom": null,
+          "timeShift": null,
+          "title": "Last 3 months deployments > 2 weeks (stacked)",
+          "tooltip": {
+            "shared": true,
+            "sort": 0,
+            "value_type": "individual"
+          },
+          "type": "graph",
+          "xaxis": {
+            "mode": "time",
+            "name": null,
+            "show": true,
+            "values": []
+          },
+          "yaxes": [
+            {
+              "format": "short",
+              "label": null,
+              "logBase": 1,
+              "max": null,
+              "min": null,
+              "show": true
+            },
+            {
+              "format": "short",
+              "label": null,
+              "logBase": 1,
+              "max": null,
+              "min": null,
+              "show": true
+            }
+          ]
+        },
+        {
+          "aliasColors": {},
+          "bars": false,
+          "datasource": "prometheus - Juju generated source",
+          "fill": 1,
+          "id": 20,
+          "legend": {
+            "avg": false,
+            "current": false,
+            "max": false,
+            "min": false,
+            "show": true,
+            "total": false,
+            "values": false
+          },
+          "lines": true,
+          "linewidth": 1,
+          "links": [],
+          "nullPointMode": "null",
+          "percentage": false,
+          "pointradius": 5,
+          "points": false,
+          "renderer": "flot",
+          "seriesOverrides": [],
+          "span": 4,
+          "stack": true,
+          "steppedLine": false,
+          "targets": [
+            {
+              "expr": "live_big_deployments_longlasting_hadoop_ec2_six_months",
+              "intervalFactor": 2,
+              "legendFormat": "AWS",
+              "metric": "live_big_deployments_hadoop_ec2_one_month",
+              "refId": "A",
+              "step": 60
+            },
+            {
+              "expr": "live_big_deployments_longlasting_hadoop_azure_six_months",
+              "intervalFactor": 2,
+              "legendFormat": "Azure",
+              "metric": "live_big_deployments_hadoop_ec2_one_month",
+              "refId": "B",
+              "step": 60
+            },
+            {
+              "expr": "live_big_deployments_longlasting_hadoop_gce_six_months",
+              "intervalFactor": 2,
+              "legendFormat": "GCE",
+              "metric": "live_big_deployments_hadoop_ec2_one_month",
+              "refId": "C",
+              "step": 60
+            },
+            {
+              "expr": "live_big_deployments_longlasting_hadoop_openstack_six_months",
+              "intervalFactor": 2,
+              "legendFormat": "Openstack",
+              "metric": "live_big_deployments_hadoop_ec2_one_month",
+              "refId": "D",
+              "step": 60
+            },
+            {
+              "expr": "live_big_deployments_longlasting_hadoop_lxd_six_months",
+              "intervalFactor": 2,
+              "legendFormat": "LXD",
+              "metric": "live_big_deployments_hadoop_ec2_one_month",
+              "refId": "E",
+              "step": 60
+            },
+            {
+              "expr": "live_big_deployments_longlasting_hadoop_maas_six_months",
+              "intervalFactor": 2,
+              "legendFormat": "MaaS",
+              "metric": "live_big_deployments_hadoop_ec2_one_month",
+              "refId": "F",
+              "step": 60
+            },
+            {
+              "expr": "live_big_deployments_longlasting_hadoop_manual_six_months",
+              "intervalFactor": 2,
+              "legendFormat": "Manual",
+              "metric": "live_big_deployments_hadoop_ec2_one_month",
+              "refId": "G",
+              "step": 60
+            }
+          ],
+          "thresholds": [],
+          "timeFrom": null,
+          "timeShift": null,
+          "title": "Last months deployments > 2 weeks (stacked)",
+          "tooltip": {
+            "shared": true,
+            "sort": 0,
+            "value_type": "individual"
+          },
+          "type": "graph",
+          "xaxis": {
+            "mode": "time",
+            "name": null,
+            "show": true,
+            "values": []
+          },
+          "yaxes": [
+            {
+              "format": "short",
+              "label": null,
+              "logBase": 1,
+              "max": null,
+              "min": null,
+              "show": true
+            },
+            {
+              "format": "short",
+              "label": null,
+              "logBase": 1,
+              "max": null,
+              "min": null,
+              "show": true
+            }
+          ]
+        }
+      ],
+      "repeat": null,
+      "repeatIteration": null,
+      "repeatRowId": null,
+      "showTitle": false,
+      "title": "BT Hadoop 2",
+      "titleSize": "h6"
+    },
+    {
+      "collapse": false,
+      "height": -29,
+      "panels": [
+        {
+          "content": "# Apache Hadoop",
+          "id": 21,
+          "links": [],
+          "mode": "markdown",
+          "span": 12,
+          "title": "",
+          "type": "text"
+        }
+      ],
+      "repeat": null,
+      "repeatIteration": null,
+      "repeatRowId": null,
+      "showTitle": false,
+      "title": "Title Apache Hadoop",
+      "titleSize": "h6"
+    },
+    {
+      "collapse": false,
+      "height": 250,
+      "panels": [
+        {
+          "aliasColors": {},
+          "bars": false,
+          "datasource": "prometheus - Juju generated source",
+          "fill": 1,
+          "id": 22,
+          "legend": {
+            "avg": false,
+            "current": false,
+            "max": false,
+            "min": false,
+            "show": true,
+            "total": false,
+            "values": false
+          },
+          "lines": true,
+          "linewidth": 1,
+          "links": [],
+          "nullPointMode": "null",
+          "percentage": false,
+          "pointradius": 5,
+          "points": false,
+          "renderer": "flot",
+          "seriesOverrides": [],
+          "span": 4,
+          "stack": true,
+          "steppedLine": false,
+          "targets": [
+            {
+              "expr": "live_big_deployments_apache_hadoop_ec2_one_month",
+              "intervalFactor": 2,
+              "legendFormat": "AWS",
+              "metric": "live_big_deployments_hadoop_ec2_one_month",
+              "refId": "A",
+              "step": 60
+            },
+            {
+              "expr": "live_big_deployments_apache_hadoop_azure_one_month",
+              "intervalFactor": 2,
+              "legendFormat": "Azure",
+              "metric": "live_big_deployments_hadoop_ec2_one_month",
+              "refId": "B",
+              "step": 60
+            },
+            {
+              "expr": "live_big_deployments_apache_hadoop_gce_one_month",
+              "intervalFactor": 2,
+              "legendFormat": "GCE",
+              "metric": "live_big_deployments_hadoop_ec2_one_month",
+              "refId": "C",
+              "step": 60
+            },
+            {
+              "expr": "live_big_deployments_apache_hadoop_openstack_one_month",
+              "intervalFactor": 2,
+              "legendFormat": "Openstack",
+              "metric": "live_big_deployments_hadoop_ec2_one_month",
+              "refId": "D",
+              "step": 60
+            },
+            {
+              "expr": "live_big_deployments_apache_hadoop_lxd_one_month",
+              "intervalFactor": 2,
+              "legendFormat": "LXD",
+              "metric": "live_big_deployments_hadoop_ec2_one_month",
+              "refId": "E",
+              "step": 60
+            },
+            {
+              "expr": "live_big_deployments_apache_hadoop_maas_one_month",
+              "intervalFactor": 2,
+              "legendFormat": "MaaS",
+              "metric": "live_big_deployments_hadoop_ec2_one_month",
+              "refId": "F",
+              "step": 60
+            },
+            {
+              "expr": "live_big_deployments_apache_hadoop_manual_one_month",
+              "intervalFactor": 2,
+              "legendFormat": "Manual",
+              "metric": "live_big_deployments_hadoop_ec2_one_month",
+              "refId": "G",
+              "step": 60
+            }
+          ],
+          "thresholds": [],
+          "timeFrom": null,
+          "timeShift": null,
+          "title": "Last months deployments (stacked)",
+          "tooltip": {
+            "shared": true,
+            "sort": 0,
+            "value_type": "individual"
+          },
+          "type": "graph",
+          "xaxis": {
+            "mode": "time",
+            "name": null,
+            "show": true,
+            "values": []
+          },
+          "yaxes": [
+            {
+              "format": "short",
+              "label": null,
+              "logBase": 1,
+              "max": null,
+              "min": null,
+              "show": true
+            },
+            {
+              "format": "short",
+              "label": null,
+              "logBase": 1,
+              "max": null,
+              "min": null,
+              "show": true
+            }
+          ]
+        },
+        {
+          "aliasColors": {},
+          "bars": false,
+          "datasource": "prometheus - Juju generated source",
+          "fill": 1,
+          "id": 23,
+          "legend": {
+            "avg": false,
+            "current": false,
+            "max": false,
+            "min": false,
+            "show": true,
+            "total": false,
+            "values": false
+          },
+          "lines": true,
+          "linewidth": 1,
+          "links": [],
+          "nullPointMode": "null",
+          "percentage": false,
+          "pointradius": 5,
+          "points": false,
+          "renderer": "flot",
+          "seriesOverrides": [],
+          "span": 4,
+          "stack": true,
+          "steppedLine": false,
+          "targets": [
+            {
+              "expr": "live_big_deployments_apache_hadoop_ec2_three_months",
+              "intervalFactor": 2,
+              "legendFormat": "AWS",
+              "metric": "live_big_deployments_hadoop_ec2_one_month",
+              "refId": "A",
+              "step": 60
+            },
+            {
+              "expr": "live_big_deployments_apache_hadoop_azure_three_months",
+              "intervalFactor": 2,
+              "legendFormat": "Azure",
+              "metric": "live_big_deployments_hadoop_ec2_one_month",
+              "refId": "B",
+              "step": 60
+            },
+            {
+              "expr": "live_big_deployments_apache_hadoop_gce_three_months",
+              "intervalFactor": 2,
+              "legendFormat": "GCE",
+              "metric": "live_big_deployments_hadoop_ec2_one_month",
+              "refId": "C",
+              "step": 60
+            },
+            {
+              "expr": "live_big_deployments_apache_hadoop_openstack_three_months",
+              "intervalFactor": 2,
+              "legendFormat": "Openstack",
+              "metric": "live_big_deployments_hadoop_ec2_one_month",
+              "refId": "D",
+              "step": 60
+            },
+            {
+              "expr": "live_big_deployments_apache_hadoop_lxd_three_months",
+              "intervalFactor": 2,
+              "legendFormat": "LXD",
+              "metric": "live_big_deployments_hadoop_ec2_one_month",
+              "refId": "E",
+              "step": 60
+            },
+            {
+              "expr": "live_big_deployments_apache_hadoop_maas_three_months",
+              "intervalFactor": 2,
+              "legendFormat": "MaaS",
+              "metric": "live_big_deployments_hadoop_ec2_one_month",
+              "refId": "F",
+              "step": 60
+            },
+            {
+              "expr": "live_big_deployments_apache_hadoop_manual_three_months",
+              "intervalFactor": 2,
+              "legendFormat": "Manual",
+              "metric": "live_big_deployments_hadoop_ec2_one_month",
+              "refId": "G",
+              "step": 60
+            }
+          ],
+          "thresholds": [],
+          "timeFrom": null,
+          "timeShift": null,
+          "title": "Last 3 months deployments (stacked)",
+          "tooltip": {
+            "shared": true,
+            "sort": 0,
+            "value_type": "individual"
+          },
+          "type": "graph",
+          "xaxis": {
+            "mode": "time",
+            "name": null,
+            "show": true,
+            "values": []
+          },
+          "yaxes": [
+            {
+              "format": "short",
+              "label": null,
+              "logBase": 1,
+              "max": null,
+              "min": null,
+              "show": true
+            },
+            {
+              "format": "short",
+              "label": null,
+              "logBase": 1,
+              "max": null,
+              "min": null,
+              "show": true
+            }
+          ]
+        },
+        {
+          "aliasColors": {},
+          "bars": false,
+          "datasource": "prometheus - Juju generated source",
+          "fill": 1,
+          "id": 24,
+          "legend": {
+            "avg": false,
+            "current": false,
+            "max": false,
+            "min": false,
+            "show": true,
+            "total": false,
+            "values": false
+          },
+          "lines": true,
+          "linewidth": 1,
+          "links": [],
+          "nullPointMode": "null",
+          "percentage": false,
+          "pointradius": 5,
+          "points": false,
+          "renderer": "flot",
+          "seriesOverrides": [],
+          "span": 4,
+          "stack": true,
+          "steppedLine": false,
+          "targets": [
+            {
+              "expr": "live_big_deployments_apache_hadoop_ec2_six_months",
+              "intervalFactor": 2,
+              "legendFormat": "AWS",
+              "metric": "live_big_deployments_hadoop_ec2_one_month",
+              "refId": "A",
+              "step": 60
+            },
+            {
+              "expr": "live_big_deployments_apache_hadoop_azure_six_months",
+              "intervalFactor": 2,
+              "legendFormat": "Azure",
+              "metric": "live_big_deployments_hadoop_ec2_one_month",
+              "refId": "B",
+              "step": 60
+            },
+            {
+              "expr": "live_big_deployments_apache_hadoop_gce_six_months",
+              "intervalFactor": 2,
+              "legendFormat": "GCE",
+              "metric": "live_big_deployments_hadoop_ec2_one_month",
+              "refId": "C",
+              "step": 60
+            },
+            {
+              "expr": "live_big_deployments_apache_hadoop_openstack_six_months",
+              "intervalFactor": 2,
+              "legendFormat": "Openstack",
+              "metric": "live_big_deployments_hadoop_ec2_one_month",
+              "refId": "D",
+              "step": 60
+            },
+            {
+              "expr": "live_big_deployments_apache_hadoop_lxd_six_months",
+              "intervalFactor": 2,
+              "legendFormat": "LXD",
+              "metric": "live_big_deployments_hadoop_ec2_one_month",
+              "refId": "E",
+              "step": 60
+            },
+            {
+              "expr": "live_big_deployments_apache_hadoop_maas_six_months",
+              "intervalFactor": 2,
+              "legendFormat": "MaaS",
+              "metric": "live_big_deployments_hadoop_ec2_one_month",
+              "refId": "F",
+              "step": 60
+            },
+            {
+              "expr": "live_big_deployments_apache_hadoop_manual_six_months",
+              "intervalFactor": 2,
+              "legendFormat": "Manual",
+              "metric": "live_big_deployments_hadoop_ec2_one_month",
+              "refId": "G",
+              "step": 60
+            }
+          ],
+          "thresholds": [],
+          "timeFrom": null,
+          "timeShift": null,
+          "title": "Last 6 months deployments (stacked)",
+          "tooltip": {
+            "shared": true,
+            "sort": 0,
+            "value_type": "individual"
+          },
+          "type": "graph",
+          "xaxis": {
+            "mode": "time",
+            "name": null,
+            "show": true,
+            "values": []
+          },
+          "yaxes": [
+            {
+              "format": "short",
+              "label": null,
+              "logBase": 1,
+              "max": null,
+              "min": null,
+              "show": true
+            },
+            {
+              "format": "short",
+              "label": null,
+              "logBase": 1,
+              "max": null,
+              "min": null,
+              "show": true
+            }
+          ]
+        }
+      ],
+      "repeat": null,
+      "repeatIteration": null,
+      "repeatRowId": null,
+      "showTitle": false,
+      "title": "Apache Hadoop 1",
+      "titleSize": "h6"
+    },
+    {
+      "collapse": false,
+      "height": 250,
+      "panels": [
+        {
+          "aliasColors": {},
+          "bars": false,
+          "datasource": "prometheus - Juju generated source",
+          "fill": 1,
+          "id": 25,
+          "legend": {
+            "avg": false,
+            "current": false,
+            "max": false,
+            "min": false,
+            "show": true,
+            "total": false,
+            "values": false
+          },
+          "lines": true,
+          "linewidth": 1,
+          "links": [],
+          "nullPointMode": "null",
+          "percentage": false,
+          "pointradius": 5,
+          "points": false,
+          "renderer": "flot",
+          "seriesOverrides": [],
+          "span": 4,
+          "stack": true,
+          "steppedLine": false,
+          "targets": [
+            {
+              "expr": "live_big_deployments_longlasting_apache_hadoop_ec2_one_month",
+              "intervalFactor": 2,
+              "legendFormat": "AWS",
+              "metric": "live_big_deployments_apache_hadoop_ec2_one_month",
+              "refId": "A",
+              "step": 60
+            },
+            {
+              "expr": "live_big_deployments_longlasting_apache_hadoop_azure_one_month",
+              "intervalFactor": 2,
+              "legendFormat": "Azure",
+              "metric": "live_big_deployments_hadoop_ec2_one_month",
+              "refId": "B",
+              "step": 60
+            },
+            {
+              "expr": "live_big_deployments_longlasting_apache_hadoop_gce_one_month",
+              "intervalFactor": 2,
+              "legendFormat": "GCE",
+              "metric": "live_big_deployments_hadoop_ec2_one_month",
+              "refId": "C",
+              "step": 60
+            },
+            {
+              "expr": "live_big_deployments_longlasting_apache_hadoop_openstack_one_month",
+              "intervalFactor": 2,
+              "legendFormat": "Openstack",
+              "metric": "live_big_deployments_hadoop_ec2_one_month",
+              "refId": "D",
+              "step": 60
+            },
+            {
+              "expr": "live_big_deployments_longlasting_apache_hadoop_lxd_one_month",
+              "intervalFactor": 2,
+              "legendFormat": "LXD",
+              "metric": "live_big_deployments_hadoop_ec2_one_month",
+              "refId": "E",
+              "step": 60
+            },
+            {
+              "expr": "live_big_deployments_longlasting_apache_hadoop_maas_one_month",
+              "intervalFactor": 2,
+              "legendFormat": "MaaS",
+              "metric": "live_big_deployments_hadoop_ec2_one_month",
+              "refId": "F",
+              "step": 60
+            },
+            {
+              "expr": "live_big_deployments_longlasting_apache_hadoop_manual_one_month",
+              "intervalFactor": 2,
+              "legendFormat": "Manual",
+              "metric": "live_big_deployments_hadoop_ec2_one_month",
+              "refId": "G",
+              "step": 60
+            }
+          ],
+          "thresholds": [],
+          "timeFrom": null,
+          "timeShift": null,
+          "title": "Last months deployments > 2 weeks (stacked)",
+          "tooltip": {
+            "shared": true,
+            "sort": 0,
+            "value_type": "individual"
+          },
+          "type": "graph",
+          "xaxis": {
+            "mode": "time",
+            "name": null,
+            "show": true,
+            "values": []
+          },
+          "yaxes": [
+            {
+              "format": "short",
+              "label": null,
+              "logBase": 1,
+              "max": null,
+              "min": null,
+              "show": true
+            },
+            {
+              "format": "short",
+              "label": null,
+              "logBase": 1,
+              "max": null,
+              "min": null,
+              "show": true
+            }
+          ]
+        },
+        {
+          "aliasColors": {},
+          "bars": false,
+          "datasource": "prometheus - Juju generated source",
+          "fill": 1,
+          "id": 26,
+          "legend": {
+            "avg": false,
+            "current": false,
+            "max": false,
+            "min": false,
+            "show": true,
+            "total": false,
+            "values": false
+          },
+          "lines": true,
+          "linewidth": 1,
+          "links": [],
+          "nullPointMode": "null",
+          "percentage": false,
+          "pointradius": 5,
+          "points": false,
+          "renderer": "flot",
+          "seriesOverrides": [],
+          "span": 4,
+          "stack": true,
+          "steppedLine": false,
+          "targets": [
+            {
+              "expr": "live_big_deployments_longlasting_apache_hadoop_ec2_three_months",
+              "intervalFactor": 2,
+              "legendFormat": "AWS",
+              "metric": "live_big_deployments_apache_hadoop_ec2_one_month",
+              "refId": "A",
+              "step": 60
+            },
+            {
+              "expr": "live_big_deployments_longlasting_apache_hadoop_azure_three_months",
+              "intervalFactor": 2,
+              "legendFormat": "Azure",
+              "metric": "live_big_deployments_hadoop_ec2_one_month",
+              "refId": "B",
+              "step": 60
+            },
+            {
+              "expr": "live_big_deployments_longlasting_apache_hadoop_gce_three_months",
+              "intervalFactor": 2,
+              "legendFormat": "GCE",
+              "metric": "live_big_deployments_hadoop_ec2_one_month",
+              "refId": "C",
+              "step": 60
+            },
+            {
+              "expr": "live_big_deployments_longlasting_apache_hadoop_openstack_three_months",
+              "intervalFactor": 2,
+              "legendFormat": "Openstack",
+              "metric": "live_big_deployments_hadoop_ec2_one_month",
+              "refId": "D",
+              "step": 60
+            },
+            {
+              "expr": "live_big_deployments_longlasting_apache_hadoop_lxd_three_months",
+              "intervalFactor": 2,
+              "legendFormat": "LXD",
+              "metric": "live_big_deployments_hadoop_ec2_one_month",
+              "refId": "E",
+              "step": 60
+            },
+            {
+              "expr": "live_big_deployments_longlasting_apache_hadoop_maas_three_months",
+              "intervalFactor": 2,
+              "legendFormat": "MaaS",
+              "metric": "live_big_deployments_hadoop_ec2_one_month",
+              "refId": "F",
+              "step": 60
+            },
+            {
+              "expr": "live_big_deployments_longlasting_apache_hadoop_manual_three_months",
+              "intervalFactor": 2,
+              "legendFormat": "Manual",
+              "metric": "live_big_deployments_hadoop_ec2_one_month",
+              "refId": "G",
+              "step": 60
+            }
+          ],
+          "thresholds": [],
+          "timeFrom": null,
+          "timeShift": null,
+          "title": "Last 3 months deployments > 2 weeks (stacked)",
+          "tooltip": {
+            "shared": true,
+            "sort": 0,
+            "value_type": "individual"
+          },
+          "type": "graph",
+          "xaxis": {
+            "mode": "time",
+            "name": null,
+            "show": true,
+            "values": []
+          },
+          "yaxes": [
+            {
+              "format": "short",
+              "label": null,
+              "logBase": 1,
+              "max": null,
+              "min": null,
+              "show": true
+            },
+            {
+              "format": "short",
+              "label": null,
+              "logBase": 1,
+              "max": null,
+              "min": null,
+              "show": true
+            }
+          ]
+        },
+        {
+          "aliasColors": {},
+          "bars": false,
+          "datasource": "prometheus - Juju generated source",
+          "fill": 1,
+          "id": 27,
+          "legend": {
+            "avg": false,
+            "current": false,
+            "max": false,
+            "min": false,
+            "show": true,
+            "total": false,
+            "values": false
+          },
+          "lines": true,
+          "linewidth": 1,
+          "links": [],
+          "nullPointMode": "null",
+          "percentage": false,
+          "pointradius": 5,
+          "points": false,
+          "renderer": "flot",
+          "seriesOverrides": [],
+          "span": 4,
+          "stack": true,
+          "steppedLine": false,
+          "targets": [
+            {
+              "expr": "live_big_deployments_longlasting_apache_hadoop_ec2_six_months",
+              "intervalFactor": 2,
+              "legendFormat": "AWS",
+              "metric": "live_big_deployments_apache_hadoop_ec2_one_month",
+              "refId": "A",
+              "step": 60
+            },
+            {
+              "expr": "live_big_deployments_longlasting_apache_hadoop_azure_six_months",
+              "intervalFactor": 2,
+              "legendFormat": "Azure",
+              "metric": "live_big_deployments_hadoop_ec2_one_month",
+              "refId": "B",
+              "step": 60
+            },
+            {
+              "expr": "live_big_deployments_longlasting_apache_hadoop_gce_six_months",
+              "intervalFactor": 2,
+              "legendFormat": "GCE",
+              "metric": "live_big_deployments_hadoop_ec2_one_month",
+              "refId": "C",
+              "step": 60
+            },
+            {
+              "expr": "live_big_deployments_longlasting_apache_hadoop_openstack_six_months",
+              "intervalFactor": 2,
+              "legendFormat": "Openstack",
+              "metric": "live_big_deployments_hadoop_ec2_one_month",
+              "refId": "D",
+              "step": 60
+            },
+            {
+              "expr": "live_big_deployments_longlasting_apache_hadoop_lxd_six_months",
+              "intervalFactor": 2,
+              "legendFormat": "LXD",
+              "metric": "live_big_deployments_hadoop_ec2_one_month",
+              "refId": "E",
+              "step": 60
+            },
+            {
+              "expr": "live_big_deployments_longlasting_apache_hadoop_maas_six_months",
+              "intervalFactor": 2,
+              "legendFormat": "MaaS",
+              "metric": "live_big_deployments_hadoop_ec2_one_month",
+              "refId": "F",
+              "step": 60
+            },
+            {
+              "expr": "live_big_deployments_longlasting_apache_hadoop_manual_six_months",
+              "intervalFactor": 2,
+              "legendFormat": "Manual",
+              "metric": "live_big_deployments_hadoop_ec2_one_month",
+              "refId": "G",
+              "step": 60
+            }
+          ],
+          "thresholds": [],
+          "timeFrom": null,
+          "timeShift": null,
+          "title": "Last 6 months deployments > 2 weeks (stacked)",
+          "tooltip": {
+            "shared": true,
+            "sort": 0,
+            "value_type": "individual"
+          },
+          "type": "graph",
+          "xaxis": {
+            "mode": "time",
+            "name": null,
+            "show": true,
+            "values": []
+          },
+          "yaxes": [
+            {
+              "format": "short",
+              "label": null,
+              "logBase": 1,
+              "max": null,
+              "min": null,
+              "show": true
+            },
+            {
+              "format": "short",
+              "label": null,
+              "logBase": 1,
+              "max": null,
+              "min": null,
+              "show": true
+            }
+          ]
+        }
+      ],
+      "repeat": null,
+      "repeatIteration": null,
+      "repeatRowId": null,
+      "showTitle": false,
+      "title": "Dashboard Row",
+      "titleSize": "h6"
+    },
+    {
+      "collapse": false,
+      "height": 28,
+      "panels": [
+        {
+          "content": "# Spark",
+          "id": 28,
+          "links": [],
+          "mode": "markdown",
+          "span": 12,
+          "title": "",
+          "type": "text"
+        }
+      ],
+      "repeat": null,
+      "repeatIteration": null,
+      "repeatRowId": null,
+      "showTitle": false,
+      "title": "Title Spark",
+      "titleSize": "h6"
+    },
+    {
+      "collapse": false,
+      "height": 250,
+      "panels": [
+        {
+          "aliasColors": {},
+          "bars": false,
+          "datasource": "prometheus - Juju generated source",
+          "fill": 1,
+          "id": 29,
+          "legend": {
+            "avg": false,
+            "current": false,
+            "max": false,
+            "min": false,
+            "show": true,
+            "total": false,
+            "values": false
+          },
+          "lines": true,
+          "linewidth": 1,
+          "links": [],
+          "nullPointMode": "null",
+          "percentage": false,
+          "pointradius": 5,
+          "points": false,
+          "renderer": "flot",
+          "seriesOverrides": [],
+          "span": 4,
+          "stack": true,
+          "steppedLine": false,
+          "targets": [
+            {
+              "expr": "live_big_deployments_spark_ec2_one_month",
+              "intervalFactor": 2,
+              "legendFormat": "AWS",
+              "metric": "live_big_deployments_hadoop_ec2_one_month",
+              "refId": "A",
+              "step": 60
+            },
+            {
+              "expr": "live_big_deployments_spark_azure_one_month",
+              "intervalFactor": 2,
+              "legendFormat": "Azure",
+              "metric": "live_big_deployments_hadoop_ec2_one_month",
+              "refId": "B",
+              "step": 60
+            },
+            {
+              "expr": "live_big_deployments_spark_gce_one_month",
+              "intervalFactor": 2,
+              "legendFormat": "GCE",
+              "metric": "live_big_deployments_hadoop_ec2_one_month",
+              "refId": "C",
+              "step": 60
+            },
+            {
+              "expr": "live_big_deployments_spark_openstack_one_month",
+              "intervalFactor": 2,
+              "legendFormat": "Openstack",
+              "metric": "live_big_deployments_hadoop_ec2_one_month",
+              "refId": "D",
+              "step": 60
+            },
+            {
+              "expr": "live_big_deployments_spark_lxd_one_month",
+              "intervalFactor": 2,
+              "legendFormat": "LXD",
+              "metric": "live_big_deployments_hadoop_ec2_one_month",
+              "refId": "E",
+              "step": 60
+            },
+            {
+              "expr": "live_big_deployments_spark_maas_one_month",
+              "intervalFactor": 2,
+              "legendFormat": "MaaS",
+              "metric": "live_big_deployments_hadoop_ec2_one_month",
+              "refId": "F",
+              "step": 60
+            },
+            {
+              "expr": "live_big_deployments_spark_manual_one_month",
+              "intervalFactor": 2,
+              "legendFormat": "Manual",
+              "metric": "live_big_deployments_hadoop_ec2_one_month",
+              "refId": "G",
+              "step": 60
+            }
+          ],
+          "thresholds": [],
+          "timeFrom": null,
+          "timeShift": null,
+          "title": "Last months deployments (stacked)",
+          "tooltip": {
+            "shared": true,
+            "sort": 0,
+            "value_type": "individual"
+          },
+          "type": "graph",
+          "xaxis": {
+            "mode": "time",
+            "name": null,
+            "show": true,
+            "values": []
+          },
+          "yaxes": [
+            {
+              "format": "short",
+              "label": null,
+              "logBase": 1,
+              "max": null,
+              "min": null,
+              "show": true
+            },
+            {
+              "format": "short",
+              "label": null,
+              "logBase": 1,
+              "max": null,
+              "min": null,
+              "show": true
+            }
+          ]
+        },
+        {
+          "aliasColors": {},
+          "bars": false,
+          "datasource": "prometheus - Juju generated source",
+          "fill": 1,
+          "id": 30,
+          "legend": {
+            "avg": false,
+            "current": false,
+            "max": false,
+            "min": false,
+            "show": true,
+            "total": false,
+            "values": false
+          },
+          "lines": true,
+          "linewidth": 1,
+          "links": [],
+          "nullPointMode": "null",
+          "percentage": false,
+          "pointradius": 5,
+          "points": false,
+          "renderer": "flot",
+          "seriesOverrides": [],
+          "span": 4,
+          "stack": true,
+          "steppedLine": false,
+          "targets": [
+            {
+              "expr": "live_big_deployments_spark_ec2_three_months",
+              "intervalFactor": 2,
+              "legendFormat": "AWS",
+              "metric": "live_big_deployments_hadoop_ec2_one_month",
+              "refId": "A",
+              "step": 60
+            },
+            {
+              "expr": "live_big_deployments_spark_azure_three_months",
+              "intervalFactor": 2,
+              "legendFormat": "Azure",
+              "metric": "live_big_deployments_hadoop_ec2_one_month",
+              "refId": "B",
+              "step": 60
+            },
+            {
+              "expr": "live_big_deployments_spark_gce_three_months",
+              "intervalFactor": 2,
+              "legendFormat": "GCE",
+              "metric": "live_big_deployments_hadoop_ec2_one_month",
+              "refId": "C",
+              "step": 60
+            },
+            {
+              "expr": "live_big_deployments_spark_openstack_three_months",
+              "intervalFactor": 2,
+              "legendFormat": "Openstack",
+              "metric": "live_big_deployments_hadoop_ec2_one_month",
+              "refId": "D",
+              "step": 60
+            },
+            {
+              "expr": "live_big_deployments_spark_lxd_three_months",
+              "intervalFactor": 2,
+              "legendFormat": "LXD",
+              "metric": "live_big_deployments_hadoop_ec2_one_month",
+              "refId": "E",
+              "step": 60
+            },
+            {
+              "expr": "live_big_deployments_spark_maas_three_months",
+              "intervalFactor": 2,
+              "legendFormat": "MaaS",
+              "metric": "live_big_deployments_hadoop_ec2_one_month",
+              "refId": "F",
+              "step": 60
+            },
+            {
+              "expr": "live_big_deployments_spark_manual_three_months",
+              "intervalFactor": 2,
+              "legendFormat": "Manual",
+              "metric": "live_big_deployments_hadoop_ec2_one_month",
+              "refId": "G",
+              "step": 60
+            }
+          ],
+          "thresholds": [],
+          "timeFrom": null,
+          "timeShift": null,
+          "title": "Last 3 months deployments (stacked)",
+          "tooltip": {
+            "shared": true,
+            "sort": 0,
+            "value_type": "individual"
+          },
+          "type": "graph",
+          "xaxis": {
+            "mode": "time",
+            "name": null,
+            "show": true,
+            "values": []
+          },
+          "yaxes": [
+            {
+              "format": "short",
+              "label": null,
+              "logBase": 1,
+              "max": null,
+              "min": null,
+              "show": true
+            },
+            {
+              "format": "short",
+              "label": null,
+              "logBase": 1,
+              "max": null,
+              "min": null,
+              "show": true
+            }
+          ]
+        },
+        {
+          "aliasColors": {},
+          "bars": false,
+          "datasource": "prometheus - Juju generated source",
+          "fill": 1,
+          "id": 31,
+          "legend": {
+            "avg": false,
+            "current": false,
+            "max": false,
+            "min": false,
+            "show": true,
+            "total": false,
+            "values": false
+          },
+          "lines": true,
+          "linewidth": 1,
+          "links": [],
+          "nullPointMode": "null",
+          "percentage": false,
+          "pointradius": 5,
+          "points": false,
+          "renderer": "flot",
+          "seriesOverrides": [],
+          "span": 4,
+          "stack": true,
+          "steppedLine": false,
+          "targets": [
+            {
+              "expr": "live_big_deployments_spark_ec2_six_months",
+              "intervalFactor": 2,
+              "legendFormat": "AWS",
+              "metric": "live_big_deployments_hadoop_ec2_one_month",
+              "refId": "A",
+              "step": 60
+            },
+            {
+              "expr": "live_big_deployments_spark_azure_six_months",
+              "intervalFactor": 2,
+              "legendFormat": "Azure",
+              "metric": "live_big_deployments_hadoop_ec2_one_month",
+              "refId": "B",
+              "step": 60
+            },
+            {
+              "expr": "live_big_deployments_spark_gce_six_months",
+              "intervalFactor": 2,
+              "legendFormat": "GCE",
+              "metric": "live_big_deployments_hadoop_ec2_one_month",
+              "refId": "C",
+              "step": 60
+            },
+            {
+              "expr": "live_big_deployments_spark_openstack_six_months",
+              "intervalFactor": 2,
+              "legendFormat": "Openstack",
+              "metric": "live_big_deployments_hadoop_ec2_one_month",
+              "refId": "D",
+              "step": 60
+            },
+            {
+              "expr": "live_big_deployments_spark_lxd_six_months",
+              "intervalFactor": 2,
+              "legendFormat": "LXD",
+              "metric": "live_big_deployments_hadoop_ec2_one_month",
+              "refId": "E",
+              "step": 60
+            },
+            {
+              "expr": "live_big_deployments_spark_maas_six_months",
+              "intervalFactor": 2,
+              "legendFormat": "MaaS",
+              "metric": "live_big_deployments_hadoop_ec2_one_month",
+              "refId": "F",
+              "step": 60
+            },
+            {
+              "expr": "live_big_deployments_spark_manual_six_months",
+              "intervalFactor": 2,
+              "legendFormat": "Manual",
+              "metric": "live_big_deployments_hadoop_ec2_one_month",
+              "refId": "G",
+              "step": 60
+            }
+          ],
+          "thresholds": [],
+          "timeFrom": null,
+          "timeShift": null,
+          "title": "Last 6 months deployments (stacked)",
+          "tooltip": {
+            "shared": true,
+            "sort": 0,
+            "value_type": "individual"
+          },
+          "type": "graph",
+          "xaxis": {
+            "mode": "time",
+            "name": null,
+            "show": true,
+            "values": []
+          },
+          "yaxes": [
+            {
+              "format": "short",
+              "label": null,
+              "logBase": 1,
+              "max": null,
+              "min": null,
+              "show": true
+            },
+            {
+              "format": "short",
+              "label": null,
+              "logBase": 1,
+              "max": null,
+              "min": null,
+              "show": true
+            }
+          ]
+        }
+      ],
+      "repeat": null,
+      "repeatIteration": null,
+      "repeatRowId": null,
+      "showTitle": false,
+      "title": "BT Spark 1",
+      "titleSize": "h6"
+    },
+    {
+      "collapse": false,
+      "height": 250,
+      "panels": [
+        {
+          "aliasColors": {},
+          "bars": false,
+          "datasource": "prometheus - Juju generated source",
+          "fill": 1,
+          "id": 32,
+          "legend": {
+            "avg": false,
+            "current": false,
+            "max": false,
+            "min": false,
+            "show": true,
+            "total": false,
+            "values": false
+          },
+          "lines": true,
+          "linewidth": 1,
+          "links": [],
+          "nullPointMode": "null",
+          "percentage": false,
+          "pointradius": 5,
+          "points": false,
+          "renderer": "flot",
+          "seriesOverrides": [],
+          "span": 4,
+          "stack": true,
+          "steppedLine": false,
+          "targets": [
+            {
+              "expr": "live_big_deployments_longlasting_spark_ec2_one_month",
+              "intervalFactor": 2,
+              "legendFormat": "AWS",
+              "metric": "live_big_deployments_spark_ec2_one_month",
+              "refId": "A",
+              "step": 60
+            },
+            {
+              "expr": "live_big_deployments_longlasting_spark_azure_one_month",
+              "intervalFactor": 2,
+              "legendFormat": "Azure",
+              "metric": "live_big_deployments_hadoop_ec2_one_month",
+              "refId": "B",
+              "step": 60
+            },
+            {
+              "expr": "live_big_deployments_longlasting_spark_gce_one_month",
+              "intervalFactor": 2,
+              "legendFormat": "GCE",
+              "metric": "live_big_deployments_hadoop_ec2_one_month",
+              "refId": "C",
+              "step": 60
+            },
+            {
+              "expr": "live_big_deployments_longlasting_spark_openstack_one_month",
+              "intervalFactor": 2,
+              "legendFormat": "Openstack",
+              "metric": "live_big_deployments_hadoop_ec2_one_month",
+              "refId": "D",
+              "step": 60
+            },
+            {
+              "expr": "live_big_deployments_longlasting_spark_lxd_one_month",
+              "intervalFactor": 2,
+              "legendFormat": "LXD",
+              "metric": "live_big_deployments_hadoop_ec2_one_month",
+              "refId": "E",
+              "step": 60
+            },
+            {
+              "expr": "live_big_deployments_longlasting_spark_maas_one_month",
+              "intervalFactor": 2,
+              "legendFormat": "MaaS",
+              "metric": "live_big_deployments_hadoop_ec2_one_month",
+              "refId": "F",
+              "step": 60
+            },
+            {
+              "expr": "live_big_deployments_longlasting_spark_manual_one_month",
+              "intervalFactor": 2,
+              "legendFormat": "Manual",
+              "metric": "live_big_deployments_hadoop_ec2_one_month",
+              "refId": "G",
+              "step": 60
+            }
+          ],
+          "thresholds": [],
+          "timeFrom": null,
+          "timeShift": null,
+          "title": "Last months deployments > 2 weeks (stacked)",
+          "tooltip": {
+            "shared": true,
+            "sort": 0,
+            "value_type": "individual"
+          },
+          "type": "graph",
+          "xaxis": {
+            "mode": "time",
+            "name": null,
+            "show": true,
+            "values": []
+          },
+          "yaxes": [
+            {
+              "format": "short",
+              "label": null,
+              "logBase": 1,
+              "max": null,
+              "min": null,
+              "show": true
+            },
+            {
+              "format": "short",
+              "label": null,
+              "logBase": 1,
+              "max": null,
+              "min": null,
+              "show": true
+            }
+          ]
+        },
+        {
+          "aliasColors": {},
+          "bars": false,
+          "datasource": "prometheus - Juju generated source",
+          "fill": 1,
+          "id": 33,
+          "legend": {
+            "avg": false,
+            "current": false,
+            "max": false,
+            "min": false,
+            "show": true,
+            "total": false,
+            "values": false
+          },
+          "lines": true,
+          "linewidth": 1,
+          "links": [],
+          "nullPointMode": "null",
+          "percentage": false,
+          "pointradius": 5,
+          "points": false,
+          "renderer": "flot",
+          "seriesOverrides": [],
+          "span": 4,
+          "stack": true,
+          "steppedLine": false,
+          "targets": [
+            {
+              "expr": "live_big_deployments_longlasting_spark_ec2_three_months",
+              "intervalFactor": 2,
+              "legendFormat": "AWS",
+              "metric": "live_big_deployments_spark_ec2_one_month",
+              "refId": "A",
+              "step": 60
+            },
+            {
+              "expr": "live_big_deployments_longlasting_spark_azure_three_months",
+              "intervalFactor": 2,
+              "legendFormat": "Azure",
+              "metric": "live_big_deployments_hadoop_ec2_one_month",
+              "refId": "B",
+              "step": 60
+            },
+            {
+              "expr": "live_big_deployments_longlasting_spark_gce_three_months",
+              "intervalFactor": 2,
+              "legendFormat": "GCE",
+              "metric": "live_big_deployments_hadoop_ec2_one_month",
+              "refId": "C",
+              "step": 60
+            },
+            {
+              "expr": "live_big_deployments_longlasting_spark_openstack_three_months",
+              "intervalFactor": 2,
+              "legendFormat": "Openstack",
+              "metric": "live_big_deployments_hadoop_ec2_one_month",
+              "refId": "D",
+              "step": 60
+            },
+            {
+              "expr": "live_big_deployments_longlasting_spark_lxd_three_months",
+              "intervalFactor": 2,
+              "legendFormat": "LXD",
+              "metric": "live_big_deployments_hadoop_ec2_one_month",
+              "refId": "E",
+              "step": 60
+            },
+            {
+              "expr": "live_big_deployments_longlasting_spark_maas_three_months",
+              "intervalFactor": 2,
+              "legendFormat": "MaaS",
+              "metric": "live_big_deployments_hadoop_ec2_one_month",
+              "refId": "F",
+              "step": 60
+            },
+            {
+              "expr": "live_big_deployments_longlasting_spark_manual_three_months",
+              "intervalFactor": 2,
+              "legendFormat": "Manual",
+              "metric": "live_big_deployments_hadoop_ec2_one_month",
+              "refId": "G",
+              "step": 60
+            }
+          ],
+          "thresholds": [],
+          "timeFrom": null,
+          "timeShift": null,
+          "title": "Last 3 months deployments > 2 weeks (stacked)",
+          "tooltip": {
+            "shared": true,
+            "sort": 0,
+            "value_type": "individual"
+          },
+          "type": "graph",
+          "xaxis": {
+            "mode": "time",
+            "name": null,
+            "show": true,
+            "values": []
+          },
+          "yaxes": [
+            {
+              "format": "short",
+              "label": null,
+              "logBase": 1,
+              "max": null,
+              "min": null,
+              "show": true
+            },
+            {
+              "format": "short",
+              "label": null,
+              "logBase": 1,
+              "max": null,
+              "min": null,
+              "show": true
+            }
+          ]
+        },
+        {
+          "aliasColors": {},
+          "bars": false,
+          "datasource": "prometheus - Juju generated source",
+          "fill": 1,
+          "id": 34,
+          "legend": {
+            "avg": false,
+            "current": false,
+            "max": false,
+            "min": false,
+            "show": true,
+            "total": false,
+            "values": false
+          },
+          "lines": true,
+          "linewidth": 1,
+          "links": [],
+          "nullPointMode": "null",
+          "percentage": false,
+          "pointradius": 5,
+          "points": false,
+          "renderer": "flot",
+          "seriesOverrides": [],
+          "span": 4,
+          "stack": true,
+          "steppedLine": false,
+          "targets": [
+            {
+              "expr": "live_big_deployments_longlasting_spark_ec2_six_months",
+              "intervalFactor": 2,
+              "legendFormat": "AWS",
+              "metric": "live_big_deployments_spark_ec2_one_month",
+              "refId": "A",
+              "step": 60
+            },
+            {
+              "expr": "live_big_deployments_longlasting_spark_azure_six_months",
+              "intervalFactor": 2,
+              "legendFormat": "Azure",
+              "metric": "live_big_deployments_hadoop_ec2_one_month",
+              "refId": "B",
+              "step": 60
+            },
+            {
+              "expr": "live_big_deployments_longlasting_spark_gce_six_months",
+              "intervalFactor": 2,
+              "legendFormat": "GCE",
+              "metric": "live_big_deployments_hadoop_ec2_one_month",
+              "refId": "C",
+              "step": 60
+            },
+            {
+              "expr": "live_big_deployments_longlasting_spark_openstack_six_months",
+              "intervalFactor": 2,
+              "legendFormat": "Openstack",
+              "metric": "live_big_deployments_hadoop_ec2_one_month",
+              "refId": "D",
+              "step": 60
+            },
+            {
+              "expr": "live_big_deployments_longlasting_spark_lxd_six_months",
+              "intervalFactor": 2,
+              "legendFormat": "LXD",
+              "metric": "live_big_deployments_hadoop_ec2_one_month",
+              "refId": "E",
+              "step": 60
+            },
+            {
+              "expr": "live_big_deployments_longlasting_spark_maas_six_months",
+              "intervalFactor": 2,
+              "legendFormat": "MaaS",
+              "metric": "live_big_deployments_hadoop_ec2_one_month",
+              "refId": "F",
+              "step": 60
+            },
+            {
+              "expr": "live_big_deployments_longlasting_spark_manual_six_months",
+              "intervalFactor": 2,
+              "legendFormat": "Manual",
+              "metric": "live_big_deployments_hadoop_ec2_one_month",
+              "refId": "G",
+              "step": 60
+            }
+          ],
+          "thresholds": [],
+          "timeFrom": null,
+          "timeShift": null,
+          "title": "Last 6 months deployments > 2 weeks (stacked)",
+          "tooltip": {
+            "shared": true,
+            "sort": 0,
+            "value_type": "individual"
+          },
+          "type": "graph",
+          "xaxis": {
+            "mode": "time",
+            "name": null,
+            "show": true,
+            "values": []
+          },
+          "yaxes": [
+            {
+              "format": "short",
+              "label": null,
+              "logBase": 1,
+              "max": null,
+              "min": null,
+              "show": true
+            },
+            {
+              "format": "short",
+              "label": null,
+              "logBase": 1,
+              "max": null,
+              "min": null,
+              "show": true
+            }
+          ]
+        }
+      ],
+      "repeat": null,
+      "repeatIteration": null,
+      "repeatRowId": null,
+      "showTitle": false,
+      "title": "BT Spark 2",
+      "titleSize": "h6"
+    },
+    {
+      "collapse": false,
+      "height": 5,
+      "panels": [
+        {
+          "content": "# Apache Spark",
+          "id": 35,
+          "links": [],
+          "mode": "markdown",
+          "span": 12,
+          "title": "",
+          "type": "text"
+        }
+      ],
+      "repeat": null,
+      "repeatIteration": null,
+      "repeatRowId": null,
+      "showTitle": false,
+      "title": "Title Apache Spark",
+      "titleSize": "h6"
+    },
+    {
+      "collapse": false,
+      "height": 250,
+      "panels": [
+        {
+          "aliasColors": {},
+          "bars": false,
+          "datasource": "prometheus - Juju generated source",
+          "fill": 1,
+          "id": 36,
+          "legend": {
+            "avg": false,
+            "current": false,
+            "max": false,
+            "min": false,
+            "show": true,
+            "total": false,
+            "values": false
+          },
+          "lines": true,
+          "linewidth": 1,
+          "links": [],
+          "nullPointMode": "null",
+          "percentage": false,
+          "pointradius": 5,
+          "points": false,
+          "renderer": "flot",
+          "seriesOverrides": [],
+          "span": 4,
+          "stack": true,
+          "steppedLine": false,
+          "targets": [
+            {
+              "expr": "live_big_deployments_apache_spark_ec2_one_month",
+              "intervalFactor": 2,
+              "legendFormat": "AWS",
+              "metric": "live_big_deployments_hadoop_ec2_one_month",
+              "refId": "A",
+              "step": 60
+            },
+            {
+              "expr": "live_big_deployments_apache_spark_azure_one_month",
+              "intervalFactor": 2,
+              "legendFormat": "Azure",
+              "metric": "live_big_deployments_hadoop_ec2_one_month",
+              "refId": "B",
+              "step": 60
+            },
+            {
+              "expr": "live_big_deployments_apache_spark_gce_one_month",
+              "intervalFactor": 2,
+              "legendFormat": "GCE",
+              "metric": "live_big_deployments_hadoop_ec2_one_month",
+              "refId": "C",
+              "step": 60
+            },
+            {
+              "expr": "live_big_deployments_apache_spark_openstack_one_month",
+              "intervalFactor": 2,
+              "legendFormat": "Openstack",
+              "metric": "live_big_deployments_hadoop_ec2_one_month",
+              "refId": "D",
+              "step": 60
+            },
+            {
+              "expr": "live_big_deployments_apache_spark_lxd_one_month",
+              "intervalFactor": 2,
+              "legendFormat": "LXD",
+              "metric": "live_big_deployments_hadoop_ec2_one_month",
+              "refId": "E",
+              "step": 60
+            },
+            {
+              "expr": "live_big_deployments_apache_spark_maas_one_month",
+              "intervalFactor": 2,
+              "legendFormat": "MaaS",
+              "metric": "live_big_deployments_hadoop_ec2_one_month",
+              "refId": "F",
+              "step": 60
+            },
+            {
+              "expr": "live_big_deployments_apache_spark_manual_one_month",
+              "intervalFactor": 2,
+              "legendFormat": "Manual",
+              "metric": "live_big_deployments_hadoop_ec2_one_month",
+              "refId": "G",
+              "step": 60
+            }
+          ],
+          "thresholds": [],
+          "timeFrom": null,
+          "timeShift": null,
+          "title": "Last months deployments (stacked)",
+          "tooltip": {
+            "shared": true,
+            "sort": 0,
+            "value_type": "individual"
+          },
+          "type": "graph",
+          "xaxis": {
+            "mode": "time",
+            "name": null,
+            "show": true,
+            "values": []
+          },
+          "yaxes": [
+            {
+              "format": "short",
+              "label": null,
+              "logBase": 1,
+              "max": null,
+              "min": null,
+              "show": true
+            },
+            {
+              "format": "short",
+              "label": null,
+              "logBase": 1,
+              "max": null,
+              "min": null,
+              "show": true
+            }
+          ]
+        },
+        {
+          "aliasColors": {},
+          "bars": false,
+          "datasource": "prometheus - Juju generated source",
+          "fill": 1,
+          "id": 37,
+          "legend": {
+            "avg": false,
+            "current": false,
+            "max": false,
+            "min": false,
+            "show": true,
+            "total": false,
+            "values": false
+          },
+          "lines": true,
+          "linewidth": 1,
+          "links": [],
+          "nullPointMode": "null",
+          "percentage": false,
+          "pointradius": 5,
+          "points": false,
+          "renderer": "flot",
+          "seriesOverrides": [],
+          "span": 4,
+          "stack": true,
+          "steppedLine": false,
+          "targets": [
+            {
+              "expr": "live_big_deployments_apache_spark_ec2_three_months",
+              "intervalFactor": 2,
+              "legendFormat": "AWS",
+              "metric": "live_big_deployments_hadoop_ec2_one_month",
+              "refId": "A",
+              "step": 60
+            },
+            {
+              "expr": "live_big_deployments_apache_spark_azure_three_months",
+              "intervalFactor": 2,
+              "legendFormat": "Azure",
+              "metric": "live_big_deployments_hadoop_ec2_one_month",
+              "refId": "B",
+              "step": 60
+            },
+            {
+              "expr": "live_big_deployments_apache_spark_gce_three_months",
+              "intervalFactor": 2,
+              "legendFormat": "GCE",
+              "metric": "live_big_deployments_hadoop_ec2_one_month",
+              "refId": "C",
+              "step": 60
+            },
+            {
+              "expr": "live_big_deployments_apache_spark_openstack_three_months",
+              "intervalFactor": 2,
+              "legendFormat": "Openstack",
+              "metric": "live_big_deployments_hadoop_ec2_one_month",
+              "refId": "D",
+              "step": 60
+            },
+            {
+              "expr": "live_big_deployments_apache_spark_lxd_three_months",
+              "intervalFactor": 2,
+              "legendFormat": "LXD",
+              "metric": "live_big_deployments_hadoop_ec2_one_month",
+              "refId": "E",
+              "step": 60
+            },
+            {
+              "expr": "live_big_deployments_apache_spark_maas_three_months",
+              "intervalFactor": 2,
+              "legendFormat": "MaaS",
+              "metric": "live_big_deployments_hadoop_ec2_one_month",
+              "refId": "F",
+              "step": 60
+            },
+            {
+              "expr": "live_big_deployments_apache_spark_manual_three_months",
+              "intervalFactor": 2,
+              "legendFormat": "Manual",
+              "metric": "live_big_deployments_hadoop_ec2_one_month",
+              "refId": "G",
+              "step": 60
+            }
+          ],
+          "thresholds": [],
+          "timeFrom": null,
+          "timeShift": null,
+          "title": "Last 3 months deployments (stacked)",
+          "tooltip": {
+            "shared": true,
+            "sort": 0,
+            "value_type": "individual"
+          },
+          "type": "graph",
+          "xaxis": {
+            "mode": "time",
+            "name": null,
+            "show": true,
+            "values": []
+          },
+          "yaxes": [
+            {
+              "format": "short",
+              "label": null,
+              "logBase": 1,
+              "max": null,
+              "min": null,
+              "show": true
+            },
+            {
+              "format": "short",
+              "label": null,
+              "logBase": 1,
+              "max": null,
+              "min": null,
+              "show": true
+            }
+          ]
+        },
+        {
+          "aliasColors": {},
+          "bars": false,
+          "datasource": "prometheus - Juju generated source",
+          "fill": 1,
+          "id": 38,
+          "legend": {
+            "avg": false,
+            "current": false,
+            "max": false,
+            "min": false,
+            "show": true,
+            "total": false,
+            "values": false
+          },
+          "lines": true,
+          "linewidth": 1,
+          "links": [],
+          "nullPointMode": "null",
+          "percentage": false,
+          "pointradius": 5,
+          "points": false,
+          "renderer": "flot",
+          "seriesOverrides": [],
+          "span": 4,
+          "stack": true,
+          "steppedLine": false,
+          "targets": [
+            {
+              "expr": "live_big_deployments_apache_spark_ec2_six_months",
+              "intervalFactor": 2,
+              "legendFormat": "AWS",
+              "metric": "live_big_deployments_hadoop_ec2_one_month",
+              "refId": "A",
+              "step": 60
+            },
+            {
+              "expr": "live_big_deployments_apache_spark_azure_six_months",
+              "intervalFactor": 2,
+              "legendFormat": "Azure",
+              "metric": "live_big_deployments_hadoop_ec2_one_month",
+              "refId": "B",
+              "step": 60
+            },
+            {
+              "expr": "live_big_deployments_apache_spark_gce_six_months",
+              "intervalFactor": 2,
+              "legendFormat": "GCE",
+              "metric": "live_big_deployments_hadoop_ec2_one_month",
+              "refId": "C",
+              "step": 60
+            },
+            {
+              "expr": "live_big_deployments_apache_spark_openstack_six_months",
+              "intervalFactor": 2,
+              "legendFormat": "Openstack",
+              "metric": "live_big_deployments_hadoop_ec2_one_month",
+              "refId": "D",
+              "step": 60
+            },
+            {
+              "expr": "live_big_deployments_apache_spark_lxd_six_months",
+              "intervalFactor": 2,
+              "legendFormat": "LXD",
+              "metric": "live_big_deployments_hadoop_ec2_one_month",
+              "refId": "E",
+              "step": 60
+            },
+            {
+              "expr": "live_big_deployments_apache_spark_maas_six_months",
+              "intervalFactor": 2,
+              "legendFormat": "MaaS",
+              "metric": "live_big_deployments_hadoop_ec2_one_month",
+              "refId": "F",
+              "step": 60
+            },
+            {
+              "expr": "live_big_deployments_apache_spark_manual_six_months",
+              "intervalFactor": 2,
+              "legendFormat": "Manual",
+              "metric": "live_big_deployments_hadoop_ec2_one_month",
+              "refId": "G",
+              "step": 60
+            }
+          ],
+          "thresholds": [],
+          "timeFrom": null,
+          "timeShift": null,
+          "title": "Last months deployments (stacked)",
+          "tooltip": {
+            "shared": true,
+            "sort": 0,
+            "value_type": "individual"
+          },
+          "type": "graph",
+          "xaxis": {
+            "mode": "time",
+            "name": null,
+            "show": true,
+            "values": []
+          },
+          "yaxes": [
+            {
+              "format": "short",
+              "label": null,
+              "logBase": 1,
+              "max": null,
+              "min": null,
+              "show": true
+            },
+            {
+              "format": "short",
+              "label": null,
+              "logBase": 1,
+              "max": null,
+              "min": null,
+              "show": true
+            }
+          ]
+        }
+      ],
+      "repeat": null,
+      "repeatIteration": null,
+      "repeatRowId": null,
+      "showTitle": false,
+      "title": "Dashboard Row",
+      "titleSize": "h6"
+    },
+    {
+      "collapse": false,
+      "height": 250,
+      "panels": [
+        {
+          "aliasColors": {},
+          "bars": false,
+          "datasource": "prometheus - Juju generated source",
+          "fill": 1,
+          "id": 39,
+          "legend": {
+            "avg": false,
+            "current": false,
+            "max": false,
+            "min": false,
+            "show": true,
+            "total": false,
+            "values": false
+          },
+          "lines": true,
+          "linewidth": 1,
+          "links": [],
+          "nullPointMode": "null",
+          "percentage": false,
+          "pointradius": 5,
+          "points": false,
+          "renderer": "flot",
+          "seriesOverrides": [],
+          "span": 4,
+          "stack": true,
+          "steppedLine": false,
+          "targets": [
+            {
+              "expr": "live_big_deployments_longlasting_apache_spark_ec2_one_month",
+              "intervalFactor": 2,
+              "legendFormat": "AWS",
+              "metric": "live_big_deployments_apache_spark_ec2_one_month",
+              "refId": "A",
+              "step": 60
+            },
+            {
+              "expr": "live_big_deployments_longlasting_apache_spark_azure_one_month",
+              "intervalFactor": 2,
+              "legendFormat": "Azure",
+              "metric": "live_big_deployments_hadoop_ec2_one_month",
+              "refId": "B",
+              "step": 60
+            },
+            {
+              "expr": "live_big_deployments_longlasting_apache_spark_gce_one_month",
+              "intervalFactor": 2,
+              "legendFormat": "GCE",
+              "metric": "live_big_deployments_hadoop_ec2_one_month",
+              "refId": "C",
+              "step": 60
+            },
+            {
+              "expr": "live_big_deployments_longlasting_apache_spark_openstack_one_month",
+              "intervalFactor": 2,
+              "legendFormat": "Openstack",
+              "metric": "live_big_deployments_hadoop_ec2_one_month",
+              "refId": "D",
+              "step": 60
+            },
+            {
+              "expr": "live_big_deployments_longlasting_apache_spark_lxd_one_month",
+              "intervalFactor": 2,
+              "legendFormat": "LXD",
+              "metric": "live_big_deployments_hadoop_ec2_one_month",
+              "refId": "E",
+              "step": 60
+            },
+            {
+              "expr": "live_big_deployments_longlasting_apache_spark_maas_one_month",
+              "intervalFactor": 2,
+              "legendFormat": "MaaS",
+              "metric": "live_big_deployments_hadoop_ec2_one_month",
+              "refId": "F",
+              "step": 60
+            },
+            {
+              "expr": "live_big_deployments_longlasting_apache_spark_manual_one_month",
+              "intervalFactor": 2,
+              "legendFormat": "Manual",
+              "metric": "live_big_deployments_hadoop_ec2_one_month",
+              "refId": "G",
+              "step": 60
+            }
+          ],
+          "thresholds": [],
+          "timeFrom": null,
+          "timeShift": null,
+          "title": "Last months deployments > 2 weeks (stacked)",
+          "tooltip": {
+            "shared": true,
+            "sort": 0,
+            "value_type": "individual"
+          },
+          "type": "graph",
+          "xaxis": {
+            "mode": "time",
+            "name": null,
+            "show": true,
+            "values": []
+          },
+          "yaxes": [
+            {
+              "format": "short",
+              "label": null,
+              "logBase": 1,
+              "max": null,
+              "min": null,
+              "show": true
+            },
+            {
+              "format": "short",
+              "label": null,
+              "logBase": 1,
+              "max": null,
+              "min": null,
+              "show": true
+            }
+          ]
+        },
+        {
+          "aliasColors": {},
+          "bars": false,
+          "datasource": "prometheus - Juju generated source",
+          "fill": 1,
+          "id": 40,
+          "legend": {
+            "avg": false,
+            "current": false,
+            "max": false,
+            "min": false,
+            "show": true,
+            "total": false,
+            "values": false
+          },
+          "lines": true,
+          "linewidth": 1,
+          "links": [],
+          "nullPointMode": "null",
+          "percentage": false,
+          "pointradius": 5,
+          "points": false,
+          "renderer": "flot",
+          "seriesOverrides": [],
+          "span": 4,
+          "stack": true,
+          "steppedLine": false,
+          "targets": [
+            {
+              "expr": "live_big_deployments_longlasting_apache_spark_ec2_three_months",
+              "intervalFactor": 2,
+              "legendFormat": "AWS",
+              "metric": "live_big_deployments_apache_spark_ec2_one_month",
+              "refId": "A",
+              "step": 60
+            },
+            {
+              "expr": "live_big_deployments_longlasting_apache_spark_azure_three_months",
+              "intervalFactor": 2,
+              "legendFormat": "Azure",
+              "metric": "live_big_deployments_hadoop_ec2_one_month",
+              "refId": "B",
+              "step": 60
+            },
+            {
+              "expr": "live_big_deployments_longlasting_apache_spark_gce_three_months",
+              "intervalFactor": 2,
+              "legendFormat": "GCE",
+              "metric": "live_big_deployments_hadoop_ec2_one_month",
+              "refId": "C",
+              "step": 60
+            },
+            {
+              "expr": "live_big_deployments_longlasting_apache_spark_openstack_three_months",
+              "intervalFactor": 2,
+              "legendFormat": "Openstack",
+              "metric": "live_big_deployments_hadoop_ec2_one_month",
+              "refId": "D",
+              "step": 60
+            },
+            {
+              "expr": "live_big_deployments_longlasting_apache_spark_lxd_three_months",
+              "intervalFactor": 2,
+              "legendFormat": "LXD",
+              "metric": "live_big_deployments_hadoop_ec2_one_month",
+              "refId": "E",
+              "step": 60
+            },
+            {
+              "expr": "live_big_deployments_longlasting_apache_spark_maas_three_months",
+              "intervalFactor": 2,
+              "legendFormat": "MaaS",
+              "metric": "live_big_deployments_hadoop_ec2_one_month",
+              "refId": "F",
+              "step": 60
+            },
+            {
+              "expr": "live_big_deployments_longlasting_apache_spark_manual_three_months",
+              "intervalFactor": 2,
+              "legendFormat": "Manual",
+              "metric": "live_big_deployments_hadoop_ec2_one_month",
+              "refId": "G",
+              "step": 60
+            }
+          ],
+          "thresholds": [],
+          "timeFrom": null,
+          "timeShift": null,
+          "title": "Last 3 months deployments > 2 weeks (stacked)",
+          "tooltip": {
+            "shared": true,
+            "sort": 0,
+            "value_type": "individual"
+          },
+          "type": "graph",
+          "xaxis": {
+            "mode": "time",
+            "name": null,
+            "show": true,
+            "values": []
+          },
+          "yaxes": [
+            {
+              "format": "short",
+              "label": null,
+              "logBase": 1,
+              "max": null,
+              "min": null,
+              "show": true
+            },
+            {
+              "format": "short",
+              "label": null,
+              "logBase": 1,
+              "max": null,
+              "min": null,
+              "show": true
+            }
+          ]
+        },
+        {
+          "aliasColors": {},
+          "bars": false,
+          "datasource": "prometheus - Juju generated source",
+          "fill": 1,
+          "id": 41,
+          "legend": {
+            "avg": false,
+            "current": false,
+            "max": false,
+            "min": false,
+            "show": true,
+            "total": false,
+            "values": false
+          },
+          "lines": true,
+          "linewidth": 1,
+          "links": [],
+          "nullPointMode": "null",
+          "percentage": false,
+          "pointradius": 5,
+          "points": false,
+          "renderer": "flot",
+          "seriesOverrides": [],
+          "span": 4,
+          "stack": true,
+          "steppedLine": false,
+          "targets": [
+            {
+              "expr": "live_big_deployments_longlasting_apache_spark_ec2_six_months",
+              "intervalFactor": 2,
+              "legendFormat": "AWS",
+              "metric": "live_big_deployments_apache_spark_ec2_one_month",
+              "refId": "A",
+              "step": 60
+            },
+            {
+              "expr": "live_big_deployments_longlasting_apache_spark_azure_six_months",
+              "intervalFactor": 2,
+              "legendFormat": "Azure",
+              "metric": "live_big_deployments_hadoop_ec2_one_month",
+              "refId": "B",
+              "step": 60
+            },
+            {
+              "expr": "live_big_deployments_longlasting_apache_spark_gce_six_months",
+              "intervalFactor": 2,
+              "legendFormat": "GCE",
+              "metric": "live_big_deployments_hadoop_ec2_one_month",
+              "refId": "C",
+              "step": 60
+            },
+            {
+              "expr": "live_big_deployments_longlasting_apache_spark_openstack_six_months",
+              "intervalFactor": 2,
+              "legendFormat": "Openstack",
+              "metric": "live_big_deployments_hadoop_ec2_one_month",
+              "refId": "D",
+              "step": 60
+            },
+            {
+              "expr": "live_big_deployments_longlasting_apache_spark_lxd_six_months",
+              "intervalFactor": 2,
+              "legendFormat": "LXD",
+              "metric": "live_big_deployments_hadoop_ec2_one_month",
+              "refId": "E",
+              "step": 60
+            },
+            {
+              "expr": "live_big_deployments_longlasting_apache_spark_maas_six_months",
+              "intervalFactor": 2,
+              "legendFormat": "MaaS",
+              "metric": "live_big_deployments_hadoop_ec2_one_month",
+              "refId": "F",
+              "step": 60
+            },
+            {
+              "expr": "live_big_deployments_longlasting_apache_spark_manual_six_months",
+              "intervalFactor": 2,
+              "legendFormat": "Manual",
+              "metric": "live_big_deployments_hadoop_ec2_one_month",
+              "refId": "G",
+              "step": 60
+            }
+          ],
+          "thresholds": [],
+          "timeFrom": null,
+          "timeShift": null,
+          "title": "Last 6 months deployments > 2 weeks (stacked)",
+          "tooltip": {
+            "shared": true,
+            "sort": 0,
+            "value_type": "individual"
+          },
+          "type": "graph",
+          "xaxis": {
+            "mode": "time",
+            "name": null,
+            "show": true,
+            "values": []
+          },
+          "yaxes": [
+            {
+              "format": "short",
+              "label": null,
+              "logBase": 1,
+              "max": null,
+              "min": null,
+              "show": true
+            },
+            {
+              "format": "short",
+              "label": null,
+              "logBase": 1,
+              "max": null,
+              "min": null,
+              "show": true
+            }
+          ]
+        }
+      ],
+      "repeat": null,
+      "repeatIteration": null,
+      "repeatRowId": null,
+      "showTitle": false,
+      "title": "Dashboard Row",
+      "titleSize": "h6"
     }
   ],
   "schemaVersion": 14,
@@ -875,5 +4197,5 @@
   },
   "timezone": "browser",
   "title": "Big Data Stats",
-  "version": 4
+  "version": 10
 }
