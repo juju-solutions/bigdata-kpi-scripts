@@ -28,6 +28,7 @@
           "mode": "markdown",
           "span": 12,
           "title": "",
+          "transparent": true,
           "type": "text"
         }
       ],
@@ -66,7 +67,7 @@
           "points": false,
           "renderer": "flot",
           "seriesOverrides": [],
-          "span": 6,
+          "span": 4,
           "stack": false,
           "steppedLine": false,
           "targets": [
@@ -138,7 +139,7 @@
           "points": false,
           "renderer": "flot",
           "seriesOverrides": [],
-          "span": 6,
+          "span": 4,
           "stack": false,
           "steppedLine": false,
           "targets": [
@@ -185,6 +186,16 @@
               "show": true
             }
           ]
+        },
+        {
+          "content": "## Bundles deployments\n\nHere we show the deployments for the big data bundles as reported by the charmstore. ",
+          "id": 42,
+          "links": [],
+          "mode": "markdown",
+          "span": 4,
+          "title": "",
+          "transparent": true,
+          "type": "text"
         }
       ],
       "repeat": null,
@@ -238,7 +249,7 @@
           "thresholds": [],
           "timeFrom": null,
           "timeShift": null,
-          "title": "Bundles Monthly Downloads",
+          "title": "Total Bundle Downloads",
           "tooltip": {
             "shared": false,
             "sort": 0,
@@ -291,6 +302,7 @@
           "mode": "markdown",
           "span": 12,
           "title": "",
+          "transparent": true,
           "type": "text"
         }
       ],
@@ -329,7 +341,7 @@
           "points": false,
           "renderer": "flot",
           "seriesOverrides": [],
-          "span": 6,
+          "span": 4,
           "stack": false,
           "steppedLine": false,
           "targets": [
@@ -464,7 +476,7 @@
           "points": false,
           "renderer": "flot",
           "seriesOverrides": [],
-          "span": 6,
+          "span": 4,
           "stack": false,
           "steppedLine": false,
           "targets": [
@@ -574,6 +586,16 @@
               "show": true
             }
           ]
+        },
+        {
+          "content": "## Deployments of Bigtop charms\n\nBigtop charms are built using the binaries produced by bigtop. The metrics shown are gathered from the charmstore.",
+          "id": 43,
+          "links": [],
+          "mode": "markdown",
+          "span": 4,
+          "title": "",
+          "transparent": true,
+          "type": "text"
         }
       ],
       "repeat": null,
@@ -743,6 +765,7 @@
           "mode": "markdown",
           "span": 12,
           "title": "",
+          "transparent": true,
           "type": "text"
         }
       ],
@@ -755,7 +778,7 @@
     },
     {
       "collapse": false,
-      "height": 250,
+      "height": 255,
       "panels": [
         {
           "aliasColors": {},
@@ -781,7 +804,7 @@
           "points": false,
           "renderer": "flot",
           "seriesOverrides": [],
-          "span": 12,
+          "span": 8,
           "stack": false,
           "steppedLine": false,
           "targets": [
@@ -828,6 +851,16 @@
               "show": true
             }
           ]
+        },
+        {
+          "content": "## Deployments of apache charms\n\nThese charms are built using binaries we compile. The metrics shown are gathered from the charmstore.",
+          "id": 44,
+          "links": [],
+          "mode": "markdown",
+          "span": 4,
+          "title": "",
+          "transparent": true,
+          "type": "text"
         }
       ],
       "repeat": null,
@@ -848,6 +881,7 @@
           "mode": "markdown",
           "span": 12,
           "title": "",
+          "transparent": true,
           "type": "text"
         }
       ],
@@ -886,7 +920,7 @@
           "points": false,
           "renderer": "flot",
           "seriesOverrides": [],
-          "span": 6,
+          "span": 4,
           "stack": false,
           "steppedLine": false,
           "targets": [
@@ -1001,7 +1035,7 @@
           "points": false,
           "renderer": "flot",
           "seriesOverrides": [],
-          "span": 6,
+          "span": 4,
           "stack": false,
           "steppedLine": false,
           "targets": [
@@ -1090,6 +1124,16 @@
               "show": true
             }
           ]
+        },
+        {
+          "content": "## Yesterdays active deployments \n\nHere we show the active deployments we saw yesterday on the logs of the charmstore.",
+          "id": 45,
+          "links": [],
+          "mode": "markdown",
+          "span": 4,
+          "title": "",
+          "transparent": true,
+          "type": "text"
         }
       ],
       "repeat": null,
@@ -1110,6 +1154,7 @@
           "mode": "markdown",
           "span": 12,
           "title": "",
+          "transparent": true,
           "type": "text"
         }
       ],
@@ -1824,7 +1869,7 @@
           "thresholds": [],
           "timeFrom": null,
           "timeShift": null,
-          "title": "Last months deployments > 2 weeks (stacked)",
+          "title": "Last 6 months deployments > 2 weeks (stacked)",
           "tooltip": {
             "shared": true,
             "sort": 0,
@@ -1866,7 +1911,7 @@
     },
     {
       "collapse": false,
-      "height": -29,
+      "height": -377,
       "panels": [
         {
           "content": "# Apache Hadoop",
@@ -1875,6 +1920,7 @@
           "mode": "markdown",
           "span": 12,
           "title": "",
+          "transparent": true,
           "type": "text"
         }
       ],
@@ -2640,6 +2686,7 @@
           "mode": "markdown",
           "span": 12,
           "title": "",
+          "transparent": true,
           "type": "text"
         }
       ],
@@ -3405,6 +3452,7 @@
           "mode": "markdown",
           "span": 12,
           "title": "",
+          "transparent": true,
           "type": "text"
         }
       ],
@@ -3747,7 +3795,7 @@
           "thresholds": [],
           "timeFrom": null,
           "timeShift": null,
-          "title": "Last months deployments (stacked)",
+          "title": "Last 6 months deployments (stacked)",
           "tooltip": {
             "shared": true,
             "sort": 0,
@@ -4197,5 +4245,5 @@
   },
   "timezone": "browser",
   "title": "Big Data Stats",
-  "version": 10
+  "version": 15
 }
