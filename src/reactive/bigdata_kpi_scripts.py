@@ -193,6 +193,8 @@ def install_files():
 
     # Package prerequisites for bigdata-kpi-scripts/thirdparty/*
     apt_install([
+        'python-swiftclient',
+        'python-keystoneclient',
         'python-configparser',
         'python-prometheus-client',
         'python-cssselect',
