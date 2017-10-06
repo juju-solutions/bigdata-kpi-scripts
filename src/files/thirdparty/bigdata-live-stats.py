@@ -24,7 +24,7 @@ uuid_re_compiled = re.compile(uuid_re)
 cloud_re = 'provider=[^,\"]*'
 region_re = 'cloud_region=[^,\"]*'
 version_re = 'controller_version=[^,\"]*'
-app_re = 'meta/any\?id=[\w][^&]*'
+app_re = '[&?]id=[^&,\"]*'
 app_re_compiled = re.compile(app_re)
 
 
@@ -200,9 +200,13 @@ def gather_lines(app_ids):
 def gather_stats(lines, registry, app_name, app_id):
     apps = defaultdict(list)
     app_id_expr = re.compile(app_id)
+    lastlogdate = datetime.strptime("20000101", '%Y%m%d')
     for ltup in lines:
         l = ltup[0]
         datestr = ltup[1]
+        processingdate = datetime.strptime(datestr, '%Y%m%d')
+        if processingdate > lastlogdate:
+            lastlogdate = processingdate
         uuid = find_uuid(l)
         if uuid:
             data = find_metadata(l, datestr)
@@ -227,11 +231,10 @@ def gather_stats(lines, registry, app_name, app_id):
     three_month_dataset = []
     six_month_dataset = []
     for uuid, data in apps.items():
-        lastdate = datetime.strptime(datestr, '%Y%m%d')
         start = datetime.strptime(data['start'], '%Y%m%d')
         end = datetime.strptime(data['end'], '%Y%m%d')
         days = (end - start).days + 1
-        if (lastdate - end).days > 1:
+        if (lastlogdate - end).days > 0:
             data['active'] = False
         else:
             data['active'] = True

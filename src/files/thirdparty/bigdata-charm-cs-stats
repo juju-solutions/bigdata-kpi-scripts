@@ -21,6 +21,12 @@ def gather_items_stats(registry, items, type='charm'):
         [type],
         registry=registry,
     )
+    day_gauge_latest = Gauge(
+        'charmstore_bd_{}_latest_downloads_day'.format(type),
+        'Total number of latest revision downloads for a {} (day)'.format(type),
+        [type],
+        registry=registry,
+    )
     week_gauge_latest = Gauge(
         'charmstore_bd_{}_latest_downloads_week'.format(type),
         'Total number of latest revision downloads for a {} (week)'.format(type),
@@ -37,6 +43,12 @@ def gather_items_stats(registry, items, type='charm'):
     total_gauge = Gauge(
         'charmstore_bd_{}_downloads_total'.format(type),
         'Total number of {} downloads for a {}'.format(type, type),
+        [type],
+        registry=registry,
+    )
+    day_gauge = Gauge(
+        'charmstore_bd_{}_downloads_day'.format(type),
+        'Total number of {} downloads for a {} (day)'.format(type, type),
         [type],
         registry=registry,
     )
@@ -61,9 +73,11 @@ def gather_items_stats(registry, items, type='charm'):
         if stats.status == 200:
             stats = yaml.load(stats.data)
             total_gauge.labels(item).set(stats['ArchiveDownloadAllRevisions']['Total'])
+            day_gauge.labels(item).set(stats['ArchiveDownloadAllRevisions']['Day'])
             week_gauge.labels(item).set(stats['ArchiveDownloadAllRevisions']['Week'])
             month_gauge.labels(item).set(stats['ArchiveDownloadAllRevisions']['Month'])
             total_gauge_latest.labels(item).set(stats['ArchiveDownload']['Total'])
+            day_gauge_latest.labels(item).set(stats['ArchiveDownload']['Day'])
             week_gauge_latest.labels(item).set(stats['ArchiveDownload']['Week'])
             month_gauge_latest.labels(item).set(stats['ArchiveDownload']['Month'])
 
